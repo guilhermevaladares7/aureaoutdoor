@@ -1,0 +1,13 @@
+SITE ÁUREA OUTDOOR
+
+Site estático (sem servidor). É só subir a pasta inteira (index.html + pasta img) em qualquer hospedagem:
+- Netlify: arraste a pasta em app.netlify.com/drop
+- GitHub Pages: suba num repositório e ative Pages na branch main
+- Hostinger/HostGator: envie tudo pra public_html
+
+Ajustes rápidos (no index.html, procure por "const CONFIG"):
+- whatsapp: número no formato 55 + DDD + número, só dígitos (já está 5533988641234)
+- instagram: cole o link do perfil (ex.: https://instagram.com/aureaoutdoor) e em instagramUsuario o @
+  Enquanto ficar vazio, o link do Instagram não aparece no rodapé.
+
+Links de produto: cada modelo tem endereço próprio, ex.: seusite.com.br/#produto-conjunto-monaco

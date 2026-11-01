@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Áurea Outdoor</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Áurea Outdoor: móveis sofisticados para piscinas, varandas e jardins, com cores, tramas e acabamentos personalizados, sob encomenda.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 60 C22 46 22 24 32 6 C42 24 42 46 32 60 Z' fill='%23B08D5A' transform='rotate(-42 32 60)' opacity='.75'/%3E%3Cpath d='M32 60 C22 46 22 24 32 6 C42 24 42 46 32 60 Z' fill='%23B08D5A' transform='rotate(40 32 60)' opacity='.6'/%3E%3Cpath d='M32 60 C23 45 23 22 32 2 C41 22 41 45 32 60 Z' fill='%2385663A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+:root {
+  --areia: #EAE3D8;
+  --areia-clara: #F3EEE6;
+  --bege: #D7C6A7;
+  --dourado: #B08D5A;
+  --dourado-escuro: #85663A;
+  --offwhite: #F8F7F2;
+  --oliva: #6B6F52;
+  --oliva-escuro: #4F5340;
+  --tinta: #3B362D;
+  --tinta-suave: #6B6356;
+  --linha: rgba(176, 141, 90, 0.32);
+  --sombra: 0 18px 40px -24px rgba(59, 54, 45, 0.35);
+  --f-display: "Playfair Display", "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --f-texto: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  --raio: 4px;
+  --largura: 1240px;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--areia-clara);
+  color: var(--tinta);
+  font-family: var(--f-texto);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  z-index: 60;
+  background: var(--offwhite);
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; }
+
+button { font: inherit; color: inherit; }
+
+h1, h2, h3 {
+  font-family: var(--f-display);
+  font-weight: 400;
+  line-height: 1.12;
+  text-wrap: balance;
+  margin: 0;
+}
+
+p { margin: 0; }
+
+:focus-visible { outline: 2px solid var(--dourado); outline-offset: 3px; }
+
+.wrap {
+  width: 100%;
+  max-width: var(--largura);
+  margin-inline: auto;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+
+.eyebrow {
+  font-family: var(--f-texto);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--dourado-escuro);
+}
+
+.traco {
+  width: 64px;
+  height: 1px;
+  background: var(--dourado);
+  border: 0;
+  margin: 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 26px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-family: var(--f-texto);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.25s;
+}
+
+.btn svg { width: 18px; height: 18px; flex: none; }
+
+.btn-oliva { background: var(--oliva); color: var(--offwhite); }
+.btn-oliva:hover { background: var(--oliva-escuro); }
+
+.btn-linha { border-color: var(--dourado); color: var(--tinta); background: transparent; }
+.btn-linha:hover { background: var(--dourado); color: var(--offwhite); }
+
+.btn-claro { background: var(--offwhite); color: var(--oliva-escuro); }
+.btn-claro:hover { background: var(--areia); }
+
+.btn-bloco { width: 100%; }
+
+.topo {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 50;
+  background: rgba(248, 247, 242, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--linha);
+}
+
+.topo .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 76px;
+}
+
+.marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--tinta);
+}
+
+.marca svg { width: 34px; height: 34px; flex: none; }
+
+.marca-texto { display: flex; flex-direction: column; line-height: 1; }
+
+.marca-nome {
+  font-family: var(--f-display);
+  font-size: 25px;
+  letter-spacing: 0.08em;
+  color: var(--dourado-escuro);
+}
+
+.marca-sub {
+  margin-top: 5px;
+  font-size: 9.5px;
+  letter-spacing: 0.5em;
+  color: var(--tinta-suave);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav a {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--tinta-suave);
+  padding-block: 6px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav a:hover, .nav a.ativo { color: var(--tinta); border-bottom-color: var(--dourado); }
+
+.topo-acoes { display: flex; align-items: center; gap: 10px; }
+
+.btn-lista {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--tinta);
+}
+
+.btn-lista:hover { border-color: var(--dourado); }
+
+.btn-lista svg { width: 18px; height: 18px; }
+
+.contador {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--dourado);
+  color: var(--offwhite);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.btn-menu {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-menu svg { width: 20px; height: 20px; }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--areia);
+}
+
+.hero .wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: 56px;
+  padding-block: 72px 80px;
+}
+
+.hero-texto { display: flex; flex-direction: column; gap: 26px; min-width: 0; position: relative; z-index: 2; }
+
+.hero h1 {
+  font-size: clamp(44px, 6.4vw, 84px);
+  font-style: italic;
+  color: var(--tinta);
+  letter-spacing: -0.01em;
+}
+
+.hero h1 span { display: block; font-style: normal; color: var(--dourado-escuro); }
+
+.hero-lead { max-width: 33em; font-size: 16px; color: var(--tinta-suave); }
+
+.hero-botoes { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.hero-fatos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 40px;
+  padding-top: 26px;
+  border-top: 1px solid var(--linha);
+}
+
+.fato strong {
+  display: block;
+  font-family: var(--f-display);
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--dourado-escuro);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.fato span {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+}
+
+.hero-arco {
+  position: relative;
+  justify-self: end;
+  width: min(100%, 480px);
+}
+
+.hero-arco .foto {
+  aspect-ratio: 4 / 5;
+  max-width: 100%;
+  border-radius: 999px 999px var(--raio) var(--raio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+}
+
+.hero-arco .foto img { width: 100%; height: 100%; object-fit: cover; object-position: 38% 50%; }
+
+.hero-selo {
+  position: absolute;
+  left: -48px;
+  bottom: 40px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: var(--offwhite);
+  box-shadow: var(--sombra);
+  display: grid;
+  place-items: center;
+}
+
+.hero-selo svg { width: 120px; height: 120px; animation: girar 40s linear infinite; }
+
+.hero-selo .folhas { position: absolute; width: 40px; height: 40px; animation: none; }
+
+@keyframes girar { to { transform: rotate(360deg); } }
+
+.ramo {
+  position: absolute;
+  pointer-events: none;
+  color: var(--oliva);
+  opacity: 0.22;
+}
+
+.ramo-1 { width: 260px; left: -70px; top: -30px; transform: rotate(18deg); }
+.ramo-2 { width: 220px; right: -60px; bottom: -40px; transform: rotate(200deg); }
+
+.valores {
+  background: var(--bege);
+}
+
+.valores .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px 34px;
+  padding-block: 20px;
+}
+
+.valores span {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--tinta);
+}
+
+.valores svg { width: 18px; height: 18px; color: var(--dourado-escuro); }
+
+.secao { padding-block: 96px; }
+
+main section[id] { scroll-margin-top: 76px; }
+
+.secao-cab {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px 40px;
+  margin-bottom: 44px;
+}
+
+.secao-cab > div { display: flex; flex-direction: column; gap: 14px; max-width: 640px; min-width: 0; }
+
+.secao-cab h2 { font-size: clamp(32px, 4vw, 48px); }
+
+.secao-cab p { color: var(--tinta-suave); }
+
+.link-seta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--dourado-escuro);
+  text-decoration: none;
+  border-bottom: 1px solid var(--linha);
+  padding-bottom: 4px;
+}
+
+.link-seta:hover { border-bottom-color: var(--dourado); }
+
+.link-seta svg { width: 16px; height: 16px; flex: none; }
+
+.ambientes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.ambiente {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 4;
+  max-width: 100%;
+  border-radius: 200px 200px var(--raio) var(--raio);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--offwhite);
+  box-shadow: var(--sombra);
+}
+
+.ambiente img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.ambiente:hover img { transform: scale(1.05); }
+
+.ambiente::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(59, 54, 45, 0) 45%, rgba(59, 54, 45, 0.72) 100%);
+}
+
+.ambiente-legenda {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ambiente-legenda h3 { font-size: 30px; color: var(--offwhite); }
+
+.ambiente-legenda span {
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--areia);
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--linha);
+  border: 1px solid var(--linha);
+}
+
+.categoria {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px;
+  background: var(--offwhite);
+  text-decoration: none;
+  transition: background 0.25s;
+}
+
+.categoria:hover { background: var(--areia-clara); }
+
+.categoria-img {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  max-width: 100%;
+}
+
+.categoria-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+
+.categoria-todos { background: var(--oliva); color: var(--offwhite); justify-content: flex-end; }
+.categoria-todos:hover { background: var(--oliva-escuro); }
+.categoria.categoria-todos h3 { color: var(--offwhite); font-style: italic; font-size: 26px; }
+.categoria.categoria-todos span { color: var(--bege); display: inline-flex; align-items: center; gap: 8px; }
+.categoria-todos svg { width: 16px; height: 16px; }
+
+.categoria h3 { font-size: 21px; }
+
+.categoria span { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--tinta-suave); font-variant-numeric: tabular-nums; }
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 28px 22px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  min-width: 0;
+}
+
+.card-img {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  max-width: 100%;
+  background: var(--offwhite);
+  border-radius: var(--raio);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.card-img img {
+  position: absolute;
+  inset: 14px;
+  width: calc(100% - 28px);
+  height: calc(100% - 28px);
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  transition: transform 0.6s ease;
+}
+
+.card-img.foto img { inset: 0; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: normal; }
+
+.card:hover .card-img { box-shadow: var(--sombra); }
+
+.card:hover .card-img img { transform: scale(1.04); }
+
+.card-info { display: flex; flex-direction: column; gap: 4px; padding-top: 16px; }
+
+.card-tipo { font-size: 10.5px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--dourado-escuro); }
+
+.card h3 { font-size: 23px; }
+
+.card-pecas { font-size: 13px; color: var(--tinta-suave); }
+
+.personalize {
+  background: var(--oliva);
+  color: var(--offwhite);
+  position: relative;
+  overflow: hidden;
+}
+
+.personalize .wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 56px;
+  align-items: center;
+  padding-block: 96px;
+}
+
+.personalize .eyebrow { color: var(--bege); }
+
+.personalize h2 { font-size: clamp(34px, 4.2vw, 52px); color: var(--offwhite); }
+
+.personalize h2 em { color: var(--bege); }
+
+.personalize-texto { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+
+.personalize-texto p { color: rgba(248, 247, 242, 0.82); max-width: 32em; }
+
+.amostras {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 32px;
+  background: rgba(248, 247, 242, 0.06);
+  border: 1px solid rgba(215, 198, 167, 0.3);
+  border-radius: var(--raio);
+  min-width: 0;
+}
+
+.amostra-grupo { display: flex; flex-direction: column; gap: 12px; }
+
+.amostra-grupo h3 {
+  font-family: var(--f-texto);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--bege);
+}
+
+.amostra-linha { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.chip-cor {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid rgba(248, 247, 242, 0.65);
+}
+
+.rolo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--offwhite);
+  border: 2px solid rgba(248, 247, 242, 0.65);
+}
+
+.rolo img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.25); }
+
+.rolo.sintetica img, .opcao-rolo.sintetica img { transform: none; }
+
+.passos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--linha);
+}
+
+.passo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 30px 26px 10px 0;
+  min-width: 0;
+}
+
+.passo + .passo { padding-left: 26px; border-left: 1px solid var(--linha); }
+
+.passo-num {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-size: 40px;
+  line-height: 1;
+  color: var(--dourado);
+}
+
+.passo h3 { font-size: 22px; }
+
+.passo p { font-size: 14px; color: var(--tinta-suave); }
+
+.chamada {
+  background: var(--areia);
+  position: relative;
+  overflow: hidden;
+}
+
+.chamada .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 22px;
+  padding-block: 96px;
+  position: relative;
+  z-index: 2;
+}
+
+.chamada h2 { font-size: clamp(36px, 5vw, 60px); font-style: italic; }
+
+.chamada p { max-width: 34em; color: var(--tinta-suave); }
+
+.numero {
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  color: var(--tinta-suave);
+  user-select: all;
+  font-variant-numeric: tabular-nums;
+}
+
+.rodape {
+  background: var(--tinta);
+  color: var(--areia);
+}
+
+.rodape .wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  padding-block: 64px 36px;
+}
+
+.rodape .marca { color: var(--areia); }
+.rodape .marca-nome { color: var(--bege); }
+.rodape .marca-sub { color: var(--areia); }
+
+.rodape p { color: rgba(234, 227, 216, 0.72); font-size: 14px; }
+
+.rodape h3 {
+  font-family: var(--f-texto);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--bege);
+  margin-bottom: 14px;
+}
+
+.rodape ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+
+.rodape a { color: rgba(234, 227, 216, 0.82); text-decoration: none; font-size: 14px; }
+.rodape a:hover { color: var(--offwhite); }
+
+.rodape-col { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+
+.rodape-base {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(215, 198, 167, 0.2);
+  font-size: 12px;
+  color: rgba(234, 227, 216, 0.55);
+}
+
+.slogan { font-family: var(--f-display); font-style: italic; font-size: 22px; color: var(--bege); }
+
+.catalogo-topo { background: var(--areia); }
+
+.catalogo-topo .wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-block: 56px 40px;
+}
+
+.catalogo-topo h1 { font-size: clamp(38px, 5vw, 60px); }
+
+.catalogo-topo p { color: var(--tinta-suave); max-width: 40em; }
+
+.filtros {
+  position: sticky;
+  top: calc(env(safe-area-inset-top, 0px) + 76px);
+  z-index: 40;
+  background: rgba(243, 238, 230, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--linha);
+}
+
+.filtros .wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-block: 14px;
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex: 1;
+  min-width: 0;
+  padding-block: 2px;
+}
+
+.chips::-webkit-scrollbar { display: none; }
+
+.chip {
+  flex: none;
+  height: 38px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--linha);
+  background: var(--offwhite);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--tinta-suave);
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.chip:hover { border-color: var(--dourado); color: var(--tinta); }
+
+.chip.ativo { background: var(--oliva); border-color: var(--oliva); color: var(--offwhite); }
+
+.chip small { font-size: 11px; opacity: 0.7; font-variant-numeric: tabular-nums; }
+
+.busca {
+  position: relative;
+  flex: none;
+  width: 240px;
+}
+
+.busca svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  color: var(--tinta-suave);
+}
+
+.busca input {
+  width: 100%;
+  height: 40px;
+  padding: 0 14px 0 38px;
+  border-radius: 999px;
+  border: 1px solid var(--linha);
+  background: var(--offwhite);
+  font: inherit;
+  font-size: 13px;
+  color: var(--tinta);
+}
+
+.busca input:focus { outline: none; border-color: var(--dourado); }
+
+.resultado-info { font-size: 13px; color: var(--tinta-suave); margin-bottom: 26px; font-variant-numeric: tabular-nums; }
+
+.vazio {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--tinta-suave);
+  border: 1px dashed var(--linha);
+  border-radius: var(--raio);
+}
+
+.migalhas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--tinta-suave);
+  padding-block: 26px 0;
+}
+
+.migalhas a { text-decoration: none; }
+.migalhas a:hover { color: var(--dourado-escuro); }
+
+.produto {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 56px;
+  padding-block: 26px 80px;
+  align-items: start;
+}
+
+.galeria { display: flex; flex-direction: column; gap: 14px; min-width: 0; position: sticky; top: 110px; }
+
+.galeria-principal {
+  aspect-ratio: 5 / 4;
+  max-width: 100%;
+  background: var(--offwhite);
+  border-radius: var(--raio);
+  overflow: hidden;
+  position: relative;
+}
+
+.galeria-principal img { position: absolute; inset: 24px; width: calc(100% - 48px); height: calc(100% - 48px); object-fit: contain; mix-blend-mode: multiply; }
+
+.galeria-principal.foto img { inset: 0; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: normal; }
+
+.miniaturas { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.miniatura {
+  width: 92px;
+  height: 72px;
+  padding: 4px;
+  border-radius: var(--raio);
+  border: 1px solid var(--linha);
+  background: var(--offwhite);
+  cursor: pointer;
+}
+
+.miniatura img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; }
+
+.miniatura.ativo { border-color: var(--dourado); box-shadow: 0 0 0 1px var(--dourado); }
+
+.produto-info { display: flex; flex-direction: column; gap: 26px; min-width: 0; }
+
+.produto-info h1 { font-size: clamp(38px, 4.6vw, 56px); }
+
+.produto-desc { color: var(--tinta-suave); }
+
+.composicao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.composicao span {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--areia);
+  font-size: 12px;
+  color: var(--tinta);
+}
+
+.bloco {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 24px;
+  border-top: 1px solid var(--linha);
+}
+
+.bloco-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.bloco-titulo h2 {
+  font-family: var(--f-texto);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--tinta);
+}
+
+.bloco-titulo span { font-size: 13px; color: var(--dourado-escuro); }
+
+.opcoes { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.opcao-cor {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 3px solid var(--offwhite);
+  box-shadow: 0 0 0 1px var(--linha);
+  cursor: pointer;
+  padding: 0;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.opcao-cor:hover { transform: scale(1.08); }
+
+.opcao-cor.ativo { box-shadow: 0 0 0 2px var(--dourado); }
+
+.opcao-rolo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  border: 3px solid var(--offwhite);
+  box-shadow: 0 0 0 1px var(--linha);
+  background: var(--offwhite);
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.opcao-rolo img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.25); }
+
+.opcao-rolo:hover { transform: scale(1.06); }
+
+.opcao-rolo.ativo { box-shadow: 0 0 0 2px var(--dourado); }
+
+.segmentos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.segmento {
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid var(--linha);
+  background: transparent;
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--tinta-suave);
+}
+
+.segmento.ativo { background: var(--tinta); border-color: var(--tinta); color: var(--offwhite); }
+
+.campo { display: flex; flex-direction: column; gap: 8px; }
+
+.campo label { font-size: 12px; color: var(--tinta-suave); }
+
+.campo textarea, .campo input {
+  width: 100%;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--offwhite);
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--tinta);
+  resize: vertical;
+}
+
+.campo textarea:focus, .campo input:focus { outline: none; border-color: var(--dourado); }
+
+.qtd {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  background: var(--offwhite);
+  height: 48px;
+}
+
+.qtd button {
+  width: 44px;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--tinta);
+}
+
+.qtd output { min-width: 28px; text-align: center; font-variant-numeric: tabular-nums; font-weight: 500; }
+
+.acoes-produto { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+.acoes-produto .btn-oliva { flex: 1 1 240px; }
+
+.aviso {
+  display: flex;
+  gap: 12px;
+  padding: 16px 18px;
+  background: var(--areia);
+  border-radius: var(--raio);
+  font-size: 13px;
+  color: var(--tinta-suave);
+}
+
+.aviso svg { width: 20px; height: 20px; flex: none; color: var(--oliva); margin-top: 1px; }
+
+.medidas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 14px;
+}
+
+.medida {
+  padding: 16px 18px;
+  background: var(--offwhite);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+
+.medida h3 {
+  font-family: var(--f-display);
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.medida dl { margin: 0; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; font-size: 13px; }
+
+.medida dt { color: var(--tinta-suave); }
+
+.medida dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; font-weight: 500; }
+
+.nota { font-size: 12px; color: var(--tinta-suave); }
+
+.relacionados { border-top: 1px solid var(--linha); padding-block: 72px 96px; }
+
+.relacionados h2 { font-size: 34px; margin-bottom: 30px; }
+
+.wpp-flutuante {
+  position: fixed;
+  right: calc(20px + env(safe-area-inset-right, 0px));
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  z-index: 45;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 56px;
+  padding: 0 22px 0 18px;
+  border-radius: 999px;
+  background: var(--oliva);
+  color: var(--offwhite);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  box-shadow: 0 14px 30px -12px rgba(59, 54, 45, 0.55);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.wpp-flutuante:hover { background: var(--oliva-escuro); transform: translateY(-2px); }
+
+.wpp-flutuante svg { width: 22px; height: 22px; }
+
+.fundo-escuro {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  background: rgba(59, 54, 45, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.fundo-escuro.aberto { opacity: 1; pointer-events: auto; }
+
+.gaveta {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 80;
+  width: min(440px, 100%);
+  background: var(--offwhite);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.35s ease;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+.gaveta.aberto { transform: none; box-shadow: -20px 0 50px -20px rgba(59, 54, 45, 0.4); }
+
+.gaveta-cab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 22px 24px;
+  border-bottom: 1px solid var(--linha);
+}
+
+.gaveta-cab h2 { font-size: 26px; }
+
+.btn-fechar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--linha);
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.btn-fechar svg { width: 18px; height: 18px; }
+
+.gaveta-corpo { flex: 1; overflow-y: auto; padding: 18px 24px; display: flex; flex-direction: column; gap: 14px; }
+
+.item-lista {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--linha);
+}
+
+.item-lista .mini {
+  width: 76px;
+  height: 64px;
+  background: var(--areia-clara);
+  border-radius: var(--raio);
+  overflow: hidden;
+}
+
+.item-lista .mini img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+
+.item-lista h3 { font-size: 18px; }
+
+.item-lista p { font-size: 12px; color: var(--tinta-suave); }
+
+.item-acoes { display: flex; align-items: center; gap: 12px; margin-top: 8px; }
+
+.item-acoes .qtd { height: 34px; }
+.item-acoes .qtd button { width: 32px; font-size: 15px; }
+
+.link-remover {
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  color: var(--dourado-escuro);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.gaveta-rodape { padding: 18px 24px 22px; border-top: 1px solid var(--linha); display: flex; flex-direction: column; gap: 10px; }
+
+.lista-vazia { padding: 40px 6px; text-align: center; color: var(--tinta-suave); display: flex; flex-direction: column; gap: 16px; align-items: center; }
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(92px + env(safe-area-inset-bottom, 0px));
+  z-index: 90;
+  transform: translate(-50%, 20px);
+  opacity: 0;
+  pointer-events: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--tinta);
+  color: var(--offwhite);
+  font-size: 13px;
+  transition: opacity 0.3s, transform 0.3s;
+  max-width: calc(100% - 40px);
+  text-align: center;
+}
+
+.toast.visivel { opacity: 1; transform: translate(-50%, 0); }
+
+.entrar { animation: entrar 0.6s ease both; }
+
+@keyframes entrar {
+  from { opacity: 0.001; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (max-width: 1080px) {
+  .nav { gap: 20px; }
+  .passos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .passo:nth-child(3) { padding-left: 0; border-left: 0; }
+}
+
+@media (max-width: 920px) {
+  .btn-menu { display: inline-flex; }
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--offwhite);
+    border-bottom: 1px solid var(--linha);
+    padding: 8px max(20px, env(safe-area-inset-right, 0px)) 18px max(20px, env(safe-area-inset-left, 0px));
+    display: none;
+  }
+  .nav.aberto { display: flex; }
+  .nav a { padding-block: 14px; border-bottom: 1px solid var(--linha); }
+  .hero .wrap { grid-template-columns: 1fr; gap: 44px; padding-block: 48px 64px; }
+  .hero-arco { justify-self: center; width: min(100%, 420px); }
+  .hero-selo { left: -14px; width: 110px; height: 110px; }
+  .hero-selo svg { width: 100px; height: 100px; }
+  .personalize .wrap { grid-template-columns: 1fr; gap: 36px; padding-block: 72px; }
+  .produto { grid-template-columns: 1fr; gap: 32px; }
+  .galeria { position: static; }
+  .rodape .wrap { grid-template-columns: 1fr 1fr; }
+  .rodape .wrap > .rodape-col:first-child { grid-column: 1 / -1; }
+  .filtros .wrap { flex-direction: column; align-items: stretch; gap: 10px; }
+  .busca { width: 100%; }
+}
+
+@media (max-width: 680px) {
+  body { font-size: 14.5px; }
+  .secao { padding-block: 68px; }
+  .ambientes { grid-template-columns: 1fr; }
+  .ambiente { aspect-ratio: 4 / 3; border-radius: 160px 160px var(--raio) var(--raio); }
+  .passos { grid-template-columns: 1fr; }
+  .passo, .passo + .passo { padding: 24px 0 8px; border-left: 0; }
+  .passo + .passo { border-top: 1px solid var(--linha); }
+  .grade { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 12px; }
+  .card h3 { font-size: 19px; }
+  .card-img img { inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px); }
+  .card-pecas { font-size: 12px; }
+  .categorias { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .categoria { padding: 14px; }
+  .categoria h3 { font-size: 17px; }
+  .btn-lista .rotulo { display: none; }
+  .marca-nome { font-size: 21px; }
+  .marca svg { width: 28px; height: 28px; }
+  .wpp-flutuante { padding: 0; width: 56px; justify-content: center; }
+  .wpp-flutuante .rotulo { display: none; }
+  .amostras { padding: 22px; }
+  .rodape .wrap { grid-template-columns: 1fr; }
+  .filtros { top: calc(env(safe-area-inset-top, 0px) + 76px); }
+}
+
+@media (max-width: 380px) {
+  .grade { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}
+
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="grad-folha" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#85663A"></stop>
+      <stop offset="1" stop-color="#C7A878"></stop>
+    </linearGradient>
+    <symbol id="folhas" viewBox="0 0 64 64">
+      <path d="M32 60 C22 46 22 24 32 6 C42 24 42 46 32 60 Z" fill="url(#grad-folha)" transform="rotate(-42 32 60)" opacity="0.75"></path>
+      <path d="M32 60 C22 46 22 24 32 6 C42 24 42 46 32 60 Z" fill="url(#grad-folha)" transform="rotate(40 32 60)" opacity="0.6"></path>
+      <path d="M32 60 C23 45 23 22 32 2 C41 22 41 45 32 60 Z" fill="url(#grad-folha)"></path>
+      <path d="M32 58 L32 12" stroke="#F8F7F2" stroke-width="0.8" opacity="0.6"></path>
+    </symbol>
+    <symbol id="ramo" viewBox="0 0 200 200">
+      <path d="M18 196 C60 150 110 90 186 8" stroke="currentColor" stroke-width="2" fill="none"></path>
+      <g fill="currentColor">
+        <ellipse cx="0" cy="0" rx="9" ry="30" transform="translate(48 150) rotate(-10) translate(0 -26)"></ellipse>
+        <ellipse cx="0" cy="0" rx="9" ry="30" transform="translate(48 150) rotate(95) translate(0 -26)"></ellipse>
+        <ellipse cx="0" cy="0" rx="9" ry="30" transform="translate(82 112) rotate(-8) translate(0 -26)"></ellipse>
+        <ellipse cx="0" cy="0" rx="9" ry="30" transform="translate(82 112) rotate(100) translate(0 -26)"></ellipse>
+        <ellipse cx="0" cy="0" rx="8" ry="27" transform="translate(114 76) rotate(-4) translate(0 -24)"></ellipse>
+        <ellipse cx="0" cy="0" rx="8" ry="27" transform="translate(114 76) rotate(104) translate(0 -24)"></ellipse>
+        <ellipse cx="0" cy="0" rx="7" ry="23" transform="translate(146 42) rotate(0) translate(0 -20)"></ellipse>
+        <ellipse cx="0" cy="0" rx="7" ry="23" transform="translate(146 42) rotate(108) translate(0 -20)"></ellipse>
+        <ellipse cx="0" cy="0" rx="6" ry="18" transform="translate(184 10) rotate(42) translate(0 -14)"></ellipse>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="Áurea Outdoor, página inicial">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#folhas"></use></svg>
+      <span class="marca-texto"><span class="marca-nome">ÁUREA</span><span class="marca-sub">OUTDOOR</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#inicio">Início</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#ambientes">Ambientes</a>
+      <a href="#personalize">Personalize</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="topo-acoes">
+      <button class="btn-lista" id="btn-lista" type="button" aria-label="Abrir lista de orçamento">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 4h12v16l-6-3.5L6 20z"></path></svg>
+        <span class="rotulo">Orçamento</span>
+        <span class="contador" id="contador" hidden>0</span>
+      </button>
+      <button class="btn-menu" id="btn-menu" type="button" aria-label="Abrir menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="rodape-col">
+      <a class="marca" href="#inicio">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#folhas"></use></svg>
+        <span class="marca-texto"><span class="marca-nome">ÁUREA</span><span class="marca-sub">OUTDOOR</span></span>
+      </a>
+      <p class="slogan">Seu estilo, ao ar livre.</p>
+      <p>Móveis de design para piscinas, varandas e jardins, produzidos sob encomenda por fábrica parceira.</p>
+    </div>
+    <div class="rodape-col">
+      <h3>Catálogo</h3>
+      <ul>
+        <li><a href="#catalogo-estar">Conjuntos de estar</a></li>
+        <li><a href="#catalogo-jantar">Mesas de jantar</a></li>
+        <li><a href="#catalogo-descanso">Espreguiçadeiras e chaises</a></li>
+        <li><a href="#catalogo-bistro">Bistrô e banquetas</a></li>
+        <li><a href="#catalogo-mesas">Mesas de centro e laterais</a></li>
+      </ul>
+    </div>
+    <div class="rodape-col">
+      <h3>Contato</h3>
+      <ul>
+        <li><a target="_blank" rel="noopener" href="#" data-wpp="Olá, Áurea Outdoor! Vim pelo site e gostaria de um orçamento.">WhatsApp <span data-numero></span></a></li>
+        <li><a id="link-instagram" target="_blank" rel="noopener" href="#">Instagram</a></li>
+        <li><a href="#como-funciona">Como funciona o pedido</a></li>
+      </ul>
+    </div>
+    <div class="rodape-base">
+      <span>© <span id="ano">2026</span> Áurea Outdoor</span>
+      <span>Elegância · Conforto · Personalização</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wpp-flutuante" target="_blank" rel="noopener" href="#" data-wpp="Olá, Áurea Outdoor! Vim pelo site e gostaria de um orçamento." aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5l1.3-3.9A8 8 0 1 1 8.6 19L4 19.5z"></path><path d="M9 10.5h6M9 13.5h4"></path></svg>
+  <span class="rotulo">WhatsApp</span>
+</a>
+
+<div class="fundo-escuro" id="fundo-escuro"></div>
+
+<aside class="gaveta" id="gaveta" aria-hidden="true" aria-label="Lista de orçamento">
+  <div class="gaveta-cab">
+    <h2>Lista de orçamento</h2>
+    <button class="btn-fechar" id="btn-fechar" type="button" aria-label="Fechar lista">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </button>
+  </div>
+  <div class="gaveta-corpo" id="gaveta-corpo"></div>
+  <div class="gaveta-rodape" id="gaveta-rodape" hidden>
+    <a class="btn btn-oliva btn-bloco" id="btn-enviar-lista" target="_blank" rel="noopener" href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5l1.3-3.9A8 8 0 1 1 8.6 19L4 19.5z"></path><path d="M9 10.5h6M9 13.5h4"></path></svg>
+      Enviar lista pelo WhatsApp
+    </a>
+    <button class="btn btn-linha btn-bloco" id="btn-limpar" type="button">Limpar lista</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script id="dados" type="application/json">{"produtos":[{"slug":"conjunto-bahamas","nome":"Bahamas","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-bahamas-1.jpg","w":1800,"h":1035,"foto":true}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,93m"],["Altura Assento","0,44m"],["Largura","2,40/2,80m"],["Profundidade","0,93m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,93m"],["Altura Assento","0,44m"],["Largura","1,18m"],["Profundidade","0,93m"]]}]},{"slug":"conjunto-monaco","nome":"Mônaco","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-monaco-1.jpg","w":1366,"h":1124,"foto":false}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,94m"],["Altura Assento","0,46m"],["Largura","1,75/2,20m"],["Profundidade","0,79m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,94m"],["Altura Assento","0,46m"],["Largura","0,83m"],["Profundidade","0,79m"]]}]},{"slug":"conjunto-modular-panama","nome":"Panamá","tipo":"Conjunto Modular","cat":"estar","imagens":[{"src":"conjunto-modular-panama-1.jpg","w":1411,"h":1104,"foto":false}],"medidas":[{"titulo":"Módulo 1.00","medidas":[["Altura Encosto","0,87m"],["Altura Assento","0,42m"],["Largura","1,00m"],["Profundidade","0,87m"]]},{"titulo":"Módulo 1.20","medidas":[["Altura Encosto","0,87m"],["Altura Assento","0,42m"],["Largura","1,20m"],["Profundidade","0,87m"]]},{"titulo":"Módulo Chaise (E/D)","medidas":[["Altura Encosto","0,87m"],["Altura Assento","0,42m"],["Largura","1,04m"],["Profundidade","1,87m"]]},{"titulo":"Mesa","medidas":[["Altura","0,42m"],["Largura","0,66m"],["Profundidade","0,85m"]]}]},{"slug":"conjunto-toronto","nome":"Toronto","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-toronto-1.jpg","w":1368,"h":1166,"foto":false}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,75m"],["Altura Assento","0,41m"],["Largura","1,62/2,20m"],["Profundidade","0,87m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,75m"],["Altura Assento","0,41m"],["Largura","0,80m"],["Profundidade","0,87m"]]}]},{"slug":"conjunto-agata","nome":"Ágata","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-agata-1.jpg","w":1384,"h":1190,"foto":false}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,90m"],["Altura Assento","0,43m"],["Largura","2,00m"],["Profundidade","0,83m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,90m"],["Altura Assento","0,43m"],["Largura","0,85m"],["Profundidade","0,83m"]]}]},{"slug":"conjunto-brisa","nome":"Brisa","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-brisa-1.jpg","w":1403,"h":1196,"foto":false}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,82m"],["Altura Assento","0,43m"],["Largura","2,00m"],["Profundidade","0,74m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,82m"],["Altura Assento","0,43m"],["Largura","0,73m"],["Profundidade","0,74m"]]}]},{"slug":"conjunto-barroco","nome":"Barroco","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-barroco-1.jpg","w":1366,"h":1225,"foto":false}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,86m"],["Altura Assento","0,42m"],["Largura","2,00m"],["Profundidade","0,98m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,86m"],["Altura Assento","0,42m"],["Largura","0,91m"],["Profundidade","0,93m"]]}]},{"slug":"sofa-duna","nome":"Duna","tipo":"Sofá","cat":"estar","imagens":[{"src":"sofa-duna-1.jpg","w":1368,"h":1284,"foto":false}],"medidas":[{"titulo":"Sofá Orgânico","medidas":[["Altura Encosto","0,92m"],["Altura Assento","0,45m"],["Largura","2,35m"],["Profundidade","1,10m"]]}]},{"slug":"sofa-odhara","nome":"Odhara","tipo":"Sofá","cat":"estar","imagens":[{"src":"sofa-odhara-1.jpg","w":1332,"h":1262,"foto":false}],"medidas":[{"titulo":"Sofá Orgânico","medidas":[["Altura Encosto","0,92m"],["Altura Assento","0,45m"],["Largura","2,35m"],["Profundidade","1,10m"]]}]},{"slug":"conjunto-summer","nome":"Summer","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-summer-1.jpg","w":1378,"h":1100,"foto":false}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,80m"],["Altura Assento","0,44m"],["Largura","2,20m"],["Profundidade","0,86m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,80m"],["Altura Assento","0,44m"],["Largura","0,79m"],["Profundidade","0,86m"]]}]},{"slug":"conjunto-mariah","nome":"Mariah","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-mariah-1.jpg","w":1390,"h":1243,"foto":false}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,83m"],["Altura Assento","0,43m"],["Largura","1,80m"],["Profundidade","0,76m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,83m"],["Altura Assento","0,43m"],["Largura","0,76m"],["Profundidade","0,76m"]]}]},{"slug":"conjunto-maldivas","nome":"Maldivas","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-maldivas-1.jpg","w":1800,"h":1035,"foto":true}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,75m"],["Altura Assento","0,41m"],["Largura","1,62/2,20m"],["Profundidade","0,87m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,75m"],["Altura Assento","0,41m"],["Largura","0,83m"],["Profundidade","0,87m"]]}]},{"slug":"conjunto-valentina","nome":"Valentina","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-valentina-1.jpg","w":1365,"h":1166,"foto":false}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,86m"],["Altura Assento","0,49m"],["Largura","1,93/2,33m"],["Profundidade","0,73m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,86m"],["Altura Assento","0,49m"],["Largura","0,74m"],["Profundidade","0,73m"]]}]},{"slug":"conjunto-helena","nome":"Helena","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-helena-1.jpg","w":1411,"h":1280,"foto":false}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,84m"],["Altura Assento","0,42m"],["Largura","1,90m"],["Profundidade","0,81m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,84m"],["Altura Assento","0,42m"],["Largura","0,88m"],["Profundidade","0,81m"]]}]},{"slug":"conjunto-elegance","nome":"Elegance","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-elegance-1.jpg","w":1392,"h":1100,"foto":false}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,85m"],["Altura Assento","0,42m"],["Largura","2,00m"],["Profundidade","0,88m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,85m"],["Altura Assento","0,42m"],["Largura","0,92m"],["Profundidade","0,88m"]]}]},{"slug":"conjunto-dublin","nome":"Dublin","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-dublin-1.jpg","w":1391,"h":1102,"foto":false}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,84m"],["Altura Assento","0,46m"],["Largura","2,00m"],["Profundidade","0,72m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,84m"],["Altura Assento","0,46m"],["Largura","0,79m"],["Profundidade","0,72m"]]}]},{"slug":"conjunto-porto","nome":"Porto","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-porto-1.jpg","w":1425,"h":1085,"foto":false}],"medidas":[{"titulo":"Sofá","medidas":[["Altura Encosto","0,84m"],["Altura Assento","0,45m"],["Largura","1,70m"],["Profundidade","0,74m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,84m"],["Altura Assento","0,45m"],["Largura","0,78m"],["Profundidade","0,74m"]]}]},{"slug":"chaise-havana","nome":"Havana","tipo":"Chaise","cat":"descanso","imagens":[{"src":"chaise-havana-1.jpg","w":1111,"h":674,"foto":false}],"medidas":[{"titulo":"Chaise","medidas":[["Altura Encosto","0,82m"],["Altura Assento","0,45m"],["Largura","1,32m"],["Profundidade","1,90m"]]}]},{"slug":"chaise-arezzo","nome":"Arezzo","tipo":"Chaise","cat":"descanso","imagens":[{"src":"chaise-arezzo-1.jpg","w":1132,"h":684,"foto":false}],"medidas":[{"titulo":"Chaise","medidas":[["Altura Encosto","0,86m"],["Altura Assento","0,46m"],["Diâmetro Assento","1,05m"],["Diâmetro Externo","1,50m"]]}]},{"slug":"balanco-folha","nome":"Folha","tipo":"Balanço","cat":"poltronas","imagens":[{"src":"balanco-folha-1.jpg","w":1234,"h":1543,"foto":false}],"medidas":[{"titulo":"Suporte","medidas":[["Altura","1,92m"],["Largura","1,37m"],["Profundidade","1,37m"]]},{"titulo":"Balanço","medidas":[["Altura","1,10m"],["Largura","1,10m"],["Profundidade","0,76m"]]}]},{"slug":"balanco-sol","nome":"Sol","tipo":"Balanço","cat":"poltronas","imagens":[{"src":"balanco-sol-1.jpg","w":1169,"h":1498,"foto":false}],"medidas":[{"titulo":"Suporte","medidas":[["Altura","1,92m"],["Largura","1,37m"],["Profundidade","1,37m"]]},{"titulo":"Balanço","medidas":[["Altura","1,10m"],["Largura","1,10m"],["Profundidade","0,76m"]]}]},{"slug":"conjunto-aruba","nome":"Aruba","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-aruba-1.jpg","w":1800,"h":1035,"foto":true}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","1,60/1,85m"],["Tampo Giratório","0,76/0,92m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,84m"],["Altura Assento","0,49m"],["Largura","0,66m"],["Profundidade","0,60m"]]}]},{"slug":"conjunto-trancoso","nome":"Trancoso","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-trancoso-1.jpg","w":1368,"h":1221,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","2,05m"],["Tampo Giratório","1,00m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,88m"],["Altura Assento","0,49m"],["Largura","0,47m"],["Profundidade","0,58m"]]}]},{"slug":"conjunto-chicago","nome":"Chicago","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-chicago-1.jpg","w":1367,"h":1187,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","1,60/1,85m"],["Tampo Giratório","0,76/0,92m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,83m"],["Altura Assento","0,49m"],["Largura","0,60m"],["Profundidade","0,55m"]]}]},{"slug":"conjunto-atlanta","nome":"Atlanta","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-atlanta-1.jpg","w":1377,"h":1260,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","1,60/1,85m"],["Tampo Giratório","0,76/0,92m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,80m"],["Altura Assento","0,44m"],["Largura","0,60m"],["Profundidade","0,57m"]]}]},{"slug":"conjunto-buzios","nome":"Búzios","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-buzios-1.jpg","w":1381,"h":1290,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","1,60/1,85m"],["Tampo Giratório","0,76/0,92m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,87m"],["Altura Assento","0,49m"],["Largura","0,57m"],["Profundidade","0,62m"]]}]},{"slug":"conjunto-berlim","nome":"Berlim","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-berlim-1.jpg","w":1369,"h":1239,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","1,20m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,80m"],["Altura Assento","0,49m"],["Largura","0,66m"],["Profundidade","0,61m"]]}]},{"slug":"conjunto-suica","nome":"Suíça","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-suica-1.jpg","w":1305,"h":1286,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","1,40m"],["Tampo Giratório","0,70m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,83m"],["Altura Assento","0,49m"],["Largura","0,46m"],["Profundidade","0,56m"]]}]},{"slug":"conjunto-toquio","nome":"Tóquio","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-toquio-1.jpg","w":1281,"h":1312,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","1,00m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,85m"],["Altura Assento","0,49m"],["Largura","0,46m"],["Profundidade","0,55m"]]}]},{"slug":"conjunto-zurique","nome":"Zurique","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-zurique-1.jpg","w":1335,"h":1285,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","1,20/1,40m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,91m"],["Altura Assento","0,48m"],["Largura","0,45m"],["Profundidade","0,55m"]]}]},{"slug":"conjunto-franca","nome":"França","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-franca-1.jpg","w":1370,"h":1291,"foto":false}],"medidas":[{"titulo":"Mesa Orgânica","medidas":[["Altura","0,80m"],["Largura","1,25m"],["Profundidade","2,75m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,79m"],["Altura Assento","0,47m"],["Largura","0,59m"],["Profundidade","0,58m"]]}]},{"slug":"conjunto-ipanema","nome":"Ipanema","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-ipanema-1.jpg","w":1321,"h":1331,"foto":false}],"medidas":[{"titulo":"Mesa Triangular","medidas":[["Altura","0,78m"],["Largura","1,50m"],["Profundidade","1,50m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,79m"],["Altura Assento","0,44m"],["Largura","0,55m"],["Profundidade","0,60m"]]}]},{"slug":"conjunto-roma","nome":"Roma","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-roma-1.jpg","w":1800,"h":1035,"foto":true}],"medidas":[{"titulo":"Mesa Oval","medidas":[["Altura","0,80m"],["Largura","1,10m"],["Profundidade","2,50m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,80m"],["Altura Assento","0,45m"],["Largura","0,57m"],["Profundidade","0,60m"]]}]},{"slug":"conjunto-macau","nome":"Macau","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-macau-1.jpg","w":1349,"h":1192,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Largura","1,10/1,20m"],["Profundidade","2,30/2,90m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,90m"],["Altura Assento","0,46m"],["Largura","0,57m"],["Profundidade","0,59m"]]}]},{"slug":"conjunto-bella","nome":"Bella","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-bella-1.jpg","w":1377,"h":1196,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Largura","1,20m"],["Profundidade","3,50m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,84m"],["Altura Assento","0,47m"],["Largura","0,66m"],["Profundidade","0,60m"]]}]},{"slug":"conjunto-austria","nome":"Áustria","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-austria-1.jpg","w":1385,"h":1248,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Largura","0,80m"],["Profundidade","1,60m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,81m"],["Altura Assento","0,49m"],["Largura","0,56m"],["Profundidade","0,58m"]]}]},{"slug":"conjunto-florida","nome":"Flórida","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-florida-1.jpg","w":1337,"h":1248,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Largura","1,20m"],["Profundidade","2,90m"]]},{"titulo":"Cadeira com braço","medidas":[["Altura Encosto","0,91m"],["Altura Assento","0,47m"],["Largura","0,52m"],["Profundidade","0,63m"]]},{"titulo":"Cadeira sem braço","medidas":[["Altura Encosto","0,91m"],["Altura Assento","0,47m"],["Largura","0,48m"],["Profundidade","0,65m"]]}]},{"slug":"conjunto-florenca","nome":"Florença","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-florenca-1.jpg","w":1415,"h":1318,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Largura","1,10m"],["Profundidade","1,90/2,30/2,70m"]]},{"titulo":"Cadeira com braço","medidas":[["Altura Encosto","0,91m"],["Altura Assento","0,48m"],["Largura","0,54m"],["Profundidade","0,55m"]]},{"titulo":"Cadeira sem braço","medidas":[["Altura Encosto","0,91m"],["Altura Assento","0,48m"],["Largura","0,45m"],["Profundidade","0,55m"]]}]},{"slug":"conjunto-bistro-chicago","nome":"Chicago","tipo":"Conjunto Bistrô","cat":"bistro","imagens":[{"src":"conjunto-bistro-chicago-1.jpg","w":1235,"h":1318,"foto":false}],"medidas":[{"titulo":"Bistrô","medidas":[["Altura","1,08m"],["Diâmetro","0,70m"]]},{"titulo":"Banqueta","medidas":[["Altura Encosto","1,02m"],["Altura Assento","0,75m"],["Largura","0,53m"],["Profundidade","0,56m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,90m"],["Altura Assento","0,63m"],["Largura","0,53m"],["Profundidade","0,56m"]]}]},{"slug":"conjunto-bistro-maragogi","nome":"Maragogi","tipo":"Conjunto Bistrô","cat":"bistro","imagens":[{"src":"conjunto-bistro-maragogi-1.jpg","w":1386,"h":1345,"foto":false}],"medidas":[{"titulo":"Bistrô","medidas":[["Altura","1,08m"],["Diâmetro","0,84m"],["Balde","0,36m"]]},{"titulo":"Banqueta","medidas":[["Altura Encosto","1,07m"],["Altura Assento","0,73m"],["Largura","0,52m"],["Profundidade","0,59m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,97m"],["Altura Assento","0,63m"],["Largura","0,52m"],["Profundidade","0,59m"]]}]},{"slug":"conjunto-bistro-zurique","nome":"Zurique","tipo":"Conjunto Bistrô","cat":"bistro","imagens":[{"src":"conjunto-bistro-zurique-1.jpg","w":1333,"h":1281,"foto":false}],"medidas":[{"titulo":"Bistrô","medidas":[["Altura","1,08m"],["Diâmetro","0,85m"],["Balde","0,36m"]]},{"titulo":"Banqueta","medidas":[["Altura Encosto","1,05m"],["Altura Assento","0,73m"],["Largura","0,44m"],["Profundidade","0,51m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,95m"],["Altura Assento","0,63m"],["Largura","0,44m"],["Profundidade","0,51m"]]}]},{"slug":"banqueta-berlim","nome":"Berlim","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-berlim-1.jpg","w":764,"h":413,"foto":false}],"medidas":[{"titulo":"Banqueta","medidas":[["Altura Encosto","1,03m"],["Altura Assento","0,75m"],["Largura","0,60m"],["Profundidade","0,57m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,93m"],["Altura Assento","0,63m"],["Largura","0,60m"],["Profundidade","0,57m"]]}]},{"slug":"banqueta-buzios","nome":"Búzios","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-buzios-1.jpg","w":657,"h":411,"foto":false}],"medidas":[{"titulo":"Banqueta","medidas":[["Altura Encosto","1,05m"],["Altura Assento","0,75m"],["Largura","0,55m"],["Profundidade","0,56m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,95m"],["Altura Assento","0,63m"],["Largura","0,55m"],["Profundidade","0,56m"]]}]},{"slug":"banqueta-atlanta","nome":"Atlanta","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-atlanta-1.jpg","w":640,"h":396,"foto":false}],"medidas":[{"titulo":"Banqueta","medidas":[["Altura Encosto","1,05m"],["Altura Assento","0,73m"],["Largura","0,54m"],["Profundidade","0,54m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,95m"],["Altura Assento","0,63m"],["Largura","0,54m"],["Profundidade","0,54m"]]}]},{"slug":"banqueta-roma","nome":"Roma","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-roma-1.jpg","w":903,"h":647,"foto":false}],"medidas":[{"titulo":"Banqueta","medidas":[["Altura Encosto","1,03m"],["Altura Assento","0,73m"],["Largura","0,55m"],["Profundidade","0,57m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,93m"],["Altura Assento","0,63m"],["Largura","0,55m"],["Profundidade","0,57m"]]}]},{"slug":"banqueta-ipanema","nome":"Ipanema","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-ipanema-1.jpg","w":901,"h":658,"foto":false}],"medidas":[{"titulo":"Banqueta","medidas":[["Altura Encosto","1,05m"],["Altura Assento","0,73m"],["Largura","0,52m"],["Profundidade","0,54m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,95m"],["Altura Assento","0,63m"],["Largura","0,52m"],["Profundidade","0,54m"]]}]},{"slug":"banqueta-trancoso","nome":"Trancoso","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-trancoso-1.jpg","w":867,"h":633,"foto":false}],"medidas":[{"titulo":"Banqueta","medidas":[["Altura Encosto","1,05m"],["Altura Assento","0,75m"],["Largura","0,51m"],["Profundidade","0,58m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,95m"],["Altura Assento","0,63m"],["Largura","0,51m"],["Profundidade","0,58m"]]}]},{"slug":"banqueta-franca","nome":"França","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-franca-1.jpg","w":888,"h":601,"foto":false}],"medidas":[{"titulo":"Banqueta","medidas":[["Altura Encosto","1,05m"],["Altura Assento","0,75m"],["Largura","0,56m"],["Profundidade","0,56m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,95m"],["Altura Assento","0,63m"],["Largura","0,56m"],["Profundidade","0,56m"]]}]},{"slug":"banqueta-bella","nome":"Bella","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-bella-1.jpg","w":880,"h":624,"foto":false}],"medidas":[{"titulo":"Banqueta","medidas":[["Altura Encosto","1,06m"],["Altura Assento","0,73m"],["Largura","0,60m"],["Profundidade","0,60m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,96m"],["Altura Assento","0,63m"],["Largura","0,60m"],["Profundidade","0,60m"]]}]},{"slug":"banqueta-austria","nome":"Áustria","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-austria-1.jpg","w":877,"h":670,"foto":false}],"medidas":[{"titulo":"Banqueta","medidas":[["Altura Encosto","1,03m"],["Altura Assento","0,75m"],["Largura","0,54m"],["Profundidade","0,58m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,93m"],["Altura Assento","0,63m"],["Largura","0,54m"],["Profundidade","0,58m"]]}]},{"slug":"banqueta-noronha","nome":"Noronha","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-noronha-1.jpg","w":815,"h":540,"foto":false}],"medidas":[{"titulo":"Banqueta","medidas":[["Altura Encosto","1,07m"],["Altura Assento","0,73m"],["Largura","0,49m"],["Profundidade","0,66m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,97m"],["Altura Assento","0,63m"],["Largura","0,49m"],["Profundidade","0,66m"]]}]},{"slug":"banqueta-alice","nome":"Alice","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-alice-1.jpg","w":884,"h":568,"foto":false}],"medidas":[{"titulo":"Banqueta corda sintética","medidas":[["Altura Encosto","1,05m"],["Altura Assento","0,75m"],["Largura","0,42m"],["Profundidade","0,44m"]]},{"titulo":"Banqueta Bancada corda sintética","medidas":[["Altura Encosto","0,95m"],["Altura Assento","0,63m"],["Largura","0,42m"],["Profundidade","0,44m"]]}]},{"slug":"banqueta-florida-com-braco","nome":"Flórida com braço","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-florida-com-braco-1.jpg","w":957,"h":570,"foto":false}],"medidas":[{"titulo":"Banqueta","medidas":[["Altura Encosto","1,05m"],["Altura Assento","0,73m"],["Largura","0,51m"],["Profundidade","0,54m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,95m"],["Altura Assento","0,63m"],["Largura","0,51m"],["Profundidade","0,54m"]]}]},{"slug":"banqueta-florida-sem-braco","nome":"Flórida sem braço","tipo":"Banqueta","cat":"bistro","imagens":[{"src":"banqueta-florida-sem-braco-1.jpg","w":990,"h":614,"foto":false}],"medidas":[{"titulo":"Banqueta","medidas":[["Altura Encosto","1,05m"],["Altura Assento","0,73m"],["Largura","0,44m"],["Profundidade","0,52m"]]},{"titulo":"Banqueta Bancada","medidas":[["Altura Encosto","0,95m"],["Altura Assento","0,63m"],["Largura","0,44m"],["Profundidade","0,52m"]]}]},{"slug":"poltrona-munique","nome":"Munique","tipo":"Poltrona","cat":"poltronas","imagens":[{"src":"poltrona-munique-1.jpg","w":1182,"h":1533,"foto":false}],"medidas":[{"titulo":"Poltrona","medidas":[["Altura Encosto","0,83m"],["Altura Assento","0,44m"],["Largura","0,85m"],["Profundidade","0,70m"]]}]},{"slug":"conjunto-laguna","nome":"Laguna","tipo":"Conjunto","cat":"estar","imagens":[{"src":"conjunto-laguna-1.jpg","w":1385,"h":1187,"foto":false}],"medidas":[{"titulo":"Namoradeira","medidas":[["Altura Encosto","0,84m"],["Altura Assento","0,44m"],["Largura","1,20m"],["Profundidade","0,64m"]]},{"titulo":"Poltrona","medidas":[["Altura Encosto","0,84m"],["Altura Assento","0,44m"],["Largura","0,67m"],["Profundidade","0,64m"]]}]},{"slug":"espreguicadeira-ludimila","nome":"Ludimila","tipo":"Espreguiçadeira","cat":"descanso","imagens":[{"src":"espreguicadeira-ludimila-1.jpg","w":666,"h":695,"foto":false}],"medidas":[{"titulo":"Espreguiçadeira","medidas":[["Altura Encosto","0,92m"],["Altura Assento","0,31m"],["Largura","0,66m"],["Profundidade","1,87m"]]}]},{"slug":"espreguicadeira-lais","nome":"Lais","tipo":"Espreguiçadeira","cat":"descanso","imagens":[{"src":"espreguicadeira-lais-1.jpg","w":666,"h":682,"foto":false}],"medidas":[{"titulo":"Espreguiçadeira","medidas":[["Altura Encosto","0,92m"],["Altura Assento","0,32m"],["Largura","0,67m"],["Profundidade","1,95m"]]}]},{"slug":"espreguicadeira-angra","nome":"Angra","tipo":"Espreguiçadeira","cat":"descanso","imagens":[{"src":"espreguicadeira-angra-1.jpg","w":639,"h":675,"foto":false}],"medidas":[{"titulo":"Espreguiçadeira corda sintética","medidas":[["Altura Encosto","0,95m"],["Altura Assento","0,32m"],["Largura","0,67m"],["Profundidade","1,95m"]]}]},{"slug":"espreguicadeira-atenas","nome":"Atenas","tipo":"Espreguiçadeira","cat":"descanso","imagens":[{"src":"espreguicadeira-atenas-1.jpg","w":593,"h":670,"foto":false}],"medidas":[{"titulo":"Espreguiçadeira corda sintética","medidas":[["Altura Encosto","0,88m"],["Largura","0,60m"],["Profundidade","1,83m"]]}]},{"slug":"espreguicadeira-gaia","nome":"Gaia","tipo":"Espreguiçadeira","cat":"descanso","imagens":[{"src":"espreguicadeira-gaia-1.jpg","w":1370,"h":623,"foto":false}],"medidas":[{"titulo":"Espreguiçadeira","medidas":[["Altura Encosto","0,92m"],["Altura Assento","0,36m"],["Largura","0,71m"],["Profundidade","1,90m"]]}]},{"slug":"espreguicadeira-nature","nome":"Nature","tipo":"Espreguiçadeira","cat":"descanso","imagens":[{"src":"espreguicadeira-nature-1.jpg","w":607,"h":672,"foto":false}],"medidas":[{"titulo":"Espreguiçadeira","medidas":[["Altura Encosto","0,89m"],["Largura","0,60m"],["Profundidade","1,83m"]]}]},{"slug":"espreguicadeira-marina","nome":"Marina","tipo":"Espreguiçadeira","cat":"descanso","imagens":[{"src":"espreguicadeira-marina-1.jpg","w":627,"h":658,"foto":false}],"medidas":[{"titulo":"Espreguiçadeira","medidas":[["Altura Encosto","0,92m"],["Altura Assento","0,32m"],["Largura","0,67m"],["Profundidade","1,95m"]]}]},{"slug":"conjunto-noronha","nome":"Noronha","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-noronha-1.jpg","w":1313,"h":1237,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","1,20m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,97m"],["Altura Assento","0,47m"],["Largura","0,52m"],["Profundidade","0,63m"]]}]},{"slug":"conjunto-california","nome":"Califórnia","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-california-1.jpg","w":1402,"h":1462,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","1,50/1,75m"],["Tampo Giratório","0,77/0,98m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,83m"],["Altura Assento","0,48m"],["Largura","0,54m"],["Profundidade","0,58m"]]}]},{"slug":"conjunto-alice","nome":"Alice","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-alice-1.jpg","w":1305,"h":1215,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","1,60/1,85m"],["Tampo Giratório","0,76/0,92m"]]},{"titulo":"Cadeira corda sintética","medidas":[["Altura Encosto","0,86m"],["Altura Assento","0,49m"],["Largura","0,51m"],["Profundidade","0,63m"]]}]},{"slug":"conjunto-maragogi","nome":"Maragogi","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-maragogi-1.jpg","w":1342,"h":1247,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Diâmetro","1,00/1,20/1,40m"]]},{"titulo":"Cadeira","medidas":[["Altura Encosto","0,96m"],["Altura Assento","0,46m"],["Largura","0,53m"],["Profundidade","0,63m"]]}]},{"slug":"conjunto-grecia","nome":"Grécia","tipo":"Conjunto","cat":"jantar","imagens":[{"src":"conjunto-grecia-1.jpg","w":1385,"h":1196,"foto":false}],"medidas":[{"titulo":"Mesa","medidas":[["Altura","0,80m"],["Largura","1,10m"],["Profundidade","1,70/2,34/2,90m"]]},{"titulo":"Cadeira corda sintética","medidas":[["Altura Encosto","0,91m"],["Altura Assento","0,48m"],["Largura","0,45m"],["Profundidade","0,55m"]]}]},{"slug":"carrinho-bar-helena","nome":"Helena","tipo":"Carrinho Bar","cat":"complementos","imagens":[{"src":"carrinho-bar-helena-1.jpg","w":1077,"h":1528,"foto":false}],"medidas":[{"titulo":"Carrinho Bar","medidas":[["Altura","0,91m"],["Largura","0,51m"],["Profundidade","1,10m"]]}]},{"slug":"aparador-florenca","nome":"Florença","tipo":"Aparador","cat":"complementos","imagens":[{"src":"aparador-florenca-1.jpg","w":819,"h":587,"foto":false}],"medidas":[{"titulo":"Aparador","medidas":[["Altura","0,81m"],["Largura","0,40m"],["Profundidade","1,20/1,50m"]]}]},{"slug":"aparador-grecia","nome":"Grécia","tipo":"Aparador","cat":"complementos","imagens":[{"src":"aparador-grecia-1.jpg","w":858,"h":512,"foto":false}],"medidas":[{"titulo":"Aparador","medidas":[["Altura","0,81m"],["Largura","0,40m"],["Profundidade","1,50/1,80m"]]}]},{"slug":"aparador-bella","nome":"Bella","tipo":"Aparador","cat":"complementos","imagens":[{"src":"aparador-bella-1.jpg","w":810,"h":640,"foto":false}],"medidas":[{"titulo":"Aparador","medidas":[["Altura","0,81m"],["Largura","0,50m"],["Profundidade","1,87/2,00m"]]}]},{"slug":"aparador-florida","nome":"Flórida","tipo":"Aparador","cat":"complementos","imagens":[{"src":"aparador-florida-1.jpg","w":905,"h":523,"foto":false}],"medidas":[{"titulo":"Aparador","medidas":[["Altura","0,81m"],["Largura","0,40m"],["Profundidade","1,50/1,80m"]]}]},{"slug":"puff-yasmin","nome":"Yasmin","tipo":"Puff","cat":"complementos","imagens":[{"src":"puff-yasmin-1.jpg","w":504,"h":522,"foto":false}],"medidas":[{"titulo":"Puff","medidas":[["Altura","0,47m"],["Diâmetro","0,47m"]]}]},{"slug":"puff-iris","nome":"Íris","tipo":"Puff","cat":"complementos","imagens":[{"src":"puff-iris-1.jpg","w":513,"h":531,"foto":false}],"medidas":[{"titulo":"Puff","medidas":[["Altura","0,47m"],["Diâmetro","0,47m"]]}]},{"slug":"puff-ingrid","nome":"Ingrid","tipo":"Puff","cat":"complementos","imagens":[{"src":"puff-ingrid-1.jpg","w":491,"h":514,"foto":false}],"medidas":[{"titulo":"Puff","medidas":[["Altura","0,51m"],["Diâmetro","0,47m"]]}]},{"slug":"puff-yara","nome":"Yara","tipo":"Puff","cat":"complementos","imagens":[{"src":"puff-yara-1.jpg","w":529,"h":522,"foto":false}],"medidas":[{"titulo":"Puff","medidas":[["Altura","0,45m"],["Diâmetro","0,47m"]]}]},{"slug":"mesa-de-centro-champanheira-cairo","nome":"Cairo","tipo":"Mesa de Centro Champanheira","cat":"mesas","imagens":[{"src":"mesa-de-centro-champanheira-cairo-1.jpg","w":497,"h":351,"foto":false}],"medidas":[{"titulo":"Mesa de Centro","medidas":[["Altura","0,38m"],["Diâmetro","0,85m"],["Balde","0,36m"]]}]},{"slug":"mesa-de-centro-champanheira-bali","nome":"Bali","tipo":"Mesa de Centro Champanheira","cat":"mesas","imagens":[{"src":"mesa-de-centro-champanheira-bali-1.jpg","w":522,"h":339,"foto":false}],"medidas":[{"titulo":"Mesa de Centro","medidas":[["Altura","0,38m"],["Diâmetro","0,85m"],["Balde","0,36m"]]}]},{"slug":"mesa-de-centro-champanheira-doha","nome":"Doha","tipo":"Mesa de Centro Champanheira","cat":"mesas","imagens":[{"src":"mesa-de-centro-champanheira-doha-1.jpg","w":518,"h":347,"foto":false}],"medidas":[{"titulo":"Mesa de Centro","medidas":[["Altura","0,38m"],["Diâmetro","0,85m"],["Balde","0,36m"]]}]},{"slug":"mesa-de-centro-champanheira-valentina","nome":"Valentina","tipo":"Mesa de Centro Champanheira","cat":"mesas","imagens":[{"src":"mesa-de-centro-champanheira-valentina-1.jpg","w":566,"h":343,"foto":false}],"medidas":[{"titulo":"Mesa de Centro","medidas":[["Altura","0,38m"],["Diâmetro","0,85m"],["Balde","0,36m"]]}]},{"slug":"mesa-lateral-malibu","nome":"Malibu","tipo":"Mesa Lateral","cat":"mesas","imagens":[{"src":"mesa-lateral-malibu-1.jpg","w":747,"h":663,"foto":false}],"medidas":[{"titulo":"Mesa Lateral (Baixa)","medidas":[["Altura","0,47m"],["Diâmetro","0,45m"]]},{"titulo":"Mesa Lateral (Média)","medidas":[["Altura","0,56m"],["Diâmetro","0,45m"]]},{"titulo":"Mesa Lateral (Alta)","medidas":[["Altura","0,67m"],["Diâmetro","0,45m"]]}]},{"slug":"mesa-de-centro-croacia","nome":"Croácia","tipo":"Mesa de Centro","cat":"mesas","imagens":[{"src":"mesa-de-centro-croacia-1.jpg","w":908,"h":527,"foto":false}],"medidas":[{"titulo":"Mesa de Centro","medidas":[["Altura","0,31m"],["Largura","0,90m"],["Profundidade","0,90m"]]}]},{"slug":"mesa-de-centro-copacabana","nome":"Copacabana","tipo":"Mesa de Centro","cat":"mesas","imagens":[{"src":"mesa-de-centro-copacabana-1.jpg","w":860,"h":548,"foto":false}],"medidas":[{"titulo":"Mesa de Centro","medidas":[["Altura","0,40m"],["Diâmetro","0,80m"]]},{"titulo":"Mesa de Centro Orgânica","medidas":[["Altura","0,30m"],["Largura","0,58m"],["Profundidade","1,45m"]]}]},{"slug":"mesa-de-centro-malibu","nome":"Malibu","tipo":"Mesa de Centro","cat":"mesas","imagens":[{"src":"mesa-de-centro-malibu-1.jpg","w":897,"h":572,"foto":false}],"medidas":[{"titulo":"Mesa de Centro (Alta)","medidas":[["Altura","0,44m"],["Diâmetro","0,45m"]]},{"titulo":"Mesa de Centro (Baixa)","medidas":[["Altura","0,34m"],["Diâmetro","0,60m"]]}]},{"slug":"mesa-de-centro-champanheira-barroco","nome":"Barroco","tipo":"Mesa de Centro Champanheira","cat":"mesas","imagens":[{"src":"mesa-de-centro-champanheira-barroco-1.jpg","w":900,"h":517,"foto":false}],"medidas":[{"titulo":"Mesa de Centro","medidas":[["Altura","0,37m"],["Diâmetro","0,84m"],["Balde","0,36m"]]}]},{"slug":"mesa-de-centro-champanheira-agata","nome":"Ágata","tipo":"Mesa de Centro Champanheira","cat":"mesas","imagens":[{"src":"mesa-de-centro-champanheira-agata-1.jpg","w":992,"h":537,"foto":false}],"medidas":[{"titulo":"Mesa de Centro","medidas":[["Altura","0,31m"],["Diâmetro","0,84m"],["Balde","0,36m"]]}]},{"slug":"mesa-de-centro-maresias","nome":"Maresias","tipo":"Mesa de Centro","cat":"mesas","imagens":[{"src":"mesa-de-centro-maresias-1.jpg","w":892,"h":634,"foto":false}],"medidas":[{"titulo":"Mesa de Centro (Alta)","medidas":[["Altura","0,38m"],["Diâmetro","0,62m"]]},{"titulo":"Mesa de Centro (Baixa)","medidas":[["Altura","0,34m"],["Diâmetro","0,62m"]]}]},{"slug":"mesa-de-centro-jangada","nome":"Jangada","tipo":"Mesa de Centro","cat":"mesas","imagens":[{"src":"mesa-de-centro-jangada-1.jpg","w":838,"h":421,"foto":false}],"medidas":[{"titulo":"Mesa de Centro (Alta)","medidas":[["Altura","0,35m"],["Diâmetro","0,62m"]]},{"titulo":"Mesa de Centro (Baixa)","medidas":[["Altura","0,31m"],["Diâmetro","0,62m"]]}]},{"slug":"mesa-lateral-centro-munique","nome":"Munique","tipo":"Mesa Lateral / Centro","cat":"mesas","imagens":[{"src":"mesa-lateral-centro-munique-1.jpg","w":780,"h":412,"foto":false}],"medidas":[{"titulo":"Mesa de Centro","medidas":[["Altura","0,37m"],["Diâmetro","0,84m"]]},{"titulo":"Mesa Lateral","medidas":[["Altura","0,60m"],["Diâmetro","0,66m"]]}]},{"slug":"mesa-lateral-centro-turim","nome":"Turim","tipo":"Mesa Lateral / Centro","cat":"mesas","imagens":[{"src":"mesa-lateral-centro-turim-1.jpg","w":1009,"h":579,"foto":false}],"medidas":[{"titulo":"Mesa Lateral","medidas":[["Altura","0,66m"],["Largura","0,50m"],["Profundidade","0,50m"]]},{"titulo":"Mesa de Centro (Alta)","medidas":[["Altura","0,37m"],["Largura","0,50m"],["Profundidade","0,50m"]]},{"titulo":"Mesa de Centro (Baixa)","medidas":[["Altura","0,31m"],["Largura","0,50m"],["Profundidade","0,50m"]]}]},{"slug":"mesa-de-centro-lateral-miami","nome":"Miami","tipo":"Mesa de Centro / Lateral","cat":"mesas","imagens":[{"src":"mesa-de-centro-lateral-miami-1.jpg","w":905,"h":559,"foto":false}],"medidas":[{"titulo":"Mesa de Centro","medidas":[["Altura","0,37m"],["Diâmetro","0,84m"]]},{"titulo":"Mesa Lateral","medidas":[["Altura","0,60m"],["Diâmetro","0,64m"]]}]},{"slug":"mesa-de-centro-oslo","nome":"Oslo","tipo":"Mesa de Centro","cat":"mesas","imagens":[{"src":"mesa-de-centro-oslo-1.jpg","w":935,"h":390,"foto":false}],"medidas":[{"titulo":"Mesa de Centro","medidas":[["Altura","0,32m"],["Largura","0,62m"],["Profundidade","1,47m"]]}]}],"acabamentos":{"aluminio":[{"nome":"Areia","cor":"#d8cdba"},{"nome":"Verde Oliva","cor":"#7f866c"},{"nome":"Azul","cor":"#62788a"},{"nome":"Bege","cor":"#756653"},{"nome":"Cinza","cor":"#736b6e"},{"nome":"Marrom","cor":"#4c3b31"},{"nome":"Preto","cor":"#191a18"}],"corda-sintetica":[{"nome":"Bege","cor":"#bf9b6d","img":"corda-sintetica-bege.jpg"},{"nome":"Cinza","cor":"#919095","img":"corda-sintetica-cinza.jpg"},{"nome":"Marrom","cor":"#685448","img":"corda-sintetica-marrom.jpg"},{"nome":"Azul","cor":"#395c8e","img":"corda-sintetica-azul.jpg"},{"nome":"Terracota","cor":"#b1603f","img":"corda-sintetica-terracota.jpg"},{"nome":"Verde","cor":"#506447","img":"corda-sintetica-verde.jpg"},{"nome":"Preto","cor":"#2f2f2f","img":"corda-sintetica-preto.jpg"},{"nome":"Mesclada","cor":"#b77c4b","img":"corda-sintetica-mesclada.jpg"}],"corda-nautica":[{"nome":"Preto 01","cor":"#1d1d1d","img":"corda-nautica-preto-01.jpg"},{"nome":"Verde 02","cor":"#494a31","img":"corda-nautica-verde-02.jpg"},{"nome":"Bege 03","cor":"#a1886e","img":"corda-nautica-bege-03.jpg"},{"nome":"Azul 04","cor":"#232c53","img":"corda-nautica-azul-04.jpg"},{"nome":"Cinza 05","cor":"#716c69","img":"corda-nautica-cinza-05.jpg"},{"nome":"Marrom 07","cor":"#4d3227","img":"corda-nautica-marrom-07.jpg"},{"nome":"Terracota 08","cor":"#a24d18","img":"corda-nautica-terracota-08.jpg"},{"nome":"Areia 09","cor":"#bdad9e","img":"corda-nautica-areia-09.jpg"},{"nome":"Verde Oliva 10","cor":"#929f8d","img":"corda-nautica-verde-oliva-10.jpg"},{"nome":"Azul Safira 11","cor":"#708b9d","img":"corda-nautica-azul-safira-11.jpg"},{"nome":"Caramelo 12","cor":"#8d6246","img":"corda-nautica-caramelo-12.jpg"}],"trico-nautico":[{"nome":"Preto 01","cor":"#1f2020","img":"trico-nautico-preto-01.jpg"},{"nome":"Verde 02","cor":"#404431","img":"trico-nautico-verde-02.jpg"},{"nome":"Bege 03","cor":"#967c61","img":"trico-nautico-bege-03.jpg"},{"nome":"Azul 04","cor":"#22264b","img":"trico-nautico-azul-04.jpg"},{"nome":"Cinza 05","cor":"#6f6a67","img":"trico-nautico-cinza-05.jpg"},{"nome":"Marrom 07","cor":"#432a1f","img":"trico-nautico-marrom-07.jpg"},{"nome":"Terracota 08","cor":"#95481b","img":"trico-nautico-terracota-08.jpg"},{"nome":"Areia 09","cor":"#ab9a88","img":"trico-nautico-areia-09.jpg"},{"nome":"Verde Oliva 10","cor":"#899880","img":"trico-nautico-verde-oliva-10.jpg"},{"nome":"Azul Safira 11","cor":"#6e8797","img":"trico-nautico-azul-safira-11.jpg"},{"nome":"Caramelo 12","cor":"#825a3c","img":"trico-nautico-caramelo-12.jpg"}]}}</script>
+<script>
+const CONFIG = {
+  whatsapp: "5533988641234",
+  whatsappExibicao: "(33) 98864-1234",
+  instagram: "",
+  instagramUsuario: ""
+};
+
+const dados = JSON.parse(document.getElementById("dados").textContent);
+const produtos = dados.produtos;
+const acabamentos = dados.acabamentos;
+
+const CATEGORIAS = [
+  { id: "estar", nome: "Conjuntos de estar", capa: "conjunto-monaco", desc: "Sofás, poltronas e módulos para montar uma sala ao ar livre na varanda, no deck ou na beira da piscina." },
+  { id: "jantar", nome: "Mesas de jantar", capa: "conjunto-atlanta", desc: "Mesas e cadeiras para refeições ao ar livre, na área gourmet, no jardim ou na varanda." },
+  { id: "descanso", nome: "Espreguiçadeiras e chaises", capa: "espreguicadeira-gaia", desc: "Peças para tomar sol e descansar na beira da piscina, no deck ou no jardim." },
+  { id: "bistro", nome: "Bistrô e banquetas", capa: "banqueta-trancoso", desc: "Mesas bistrô e banquetas em altura de balcão e de bancada, para áreas gourmet e bares." },
+  { id: "poltronas", nome: "Poltronas e balanços", capa: "balanco-sol", desc: "Poltronas e balanços suspensos para criar um canto de leitura e descanso." },
+  { id: "mesas", nome: "Mesas de centro e laterais", capa: "mesa-de-centro-champanheira-bali", desc: "Mesas de centro, laterais e champanheiras para completar o estar externo." },
+  { id: "complementos", nome: "Aparadores, puffs e bar", capa: "puff-iris", desc: "Aparadores, puffs e carrinho bar para fechar a composição do ambiente." }
+];
+
+const DESTAQUES = [
+  "conjunto-maldivas",
+  "conjunto-modular-panama",
+  "sofa-duna",
+  "espreguicadeira-gaia",
+  "conjunto-trancoso",
+  "balanco-sol",
+  "mesa-de-centro-champanheira-bali",
+  "chaise-arezzo"
+];
+
+const TRAMAS = [
+  { id: "corda-nautica", nome: "Corda náutica" },
+  { id: "trico-nautico", nome: "Tricô náutico" },
+  { id: "corda-sintetica", nome: "Corda sintética" }
+];
+
+const SEM_TRAMA = new Set([
+  "conjunto-modular-panama",
+  "espreguicadeira-ludimila",
+  "espreguicadeira-lais",
+  "conjunto-noronha",
+  "conjunto-maragogi",
+  "conjunto-bistro-maragogi",
+  "banqueta-noronha",
+  "carrinho-bar-helena",
+  "aparador-florenca",
+  "aparador-grecia",
+  "aparador-bella",
+  "aparador-florida",
+  "mesa-lateral-malibu",
+  "mesa-de-centro-croacia",
+  "mesa-de-centro-copacabana",
+  "mesa-de-centro-malibu",
+  "mesa-de-centro-champanheira-barroco",
+  "mesa-de-centro-champanheira-agata",
+  "mesa-de-centro-maresias",
+  "mesa-de-centro-jangada",
+  "mesa-lateral-centro-munique",
+  "mesa-lateral-centro-turim",
+  "mesa-de-centro-lateral-miami",
+  "mesa-de-centro-oslo"
+]);
+
+const SECOES_HOME = ["inicio", "ambientes", "colecao", "personalize", "como-funciona", "contato"];
+
+const app = document.getElementById("app");
+let lista = carregarLista();
+let selecao = null;
+
+const icone = {
+  seta: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+  conversa: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5l1.3-3.9A8 8 0 1 1 8.6 19L4 19.5z"/><path d="M9 10.5h6M9 13.5h4"/></svg>',
+  info: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>',
+  lixo: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 7h14M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>'
+};
+
+function porSlug(slug) {
+  return produtos.find((p) => p.slug === slug);
+}
+
+function nomeCompleto(p) {
+  return p.tipo + " " + p.nome;
+}
+
+function categoria(id) {
+  return CATEGORIAS.find((c) => c.id === id);
+}
+
+function pecas(p) {
+  const nomes = [];
+  p.medidas.forEach((g) => {
+    const t = g.titulo.replace(/ corda sintética/i, "");
+    if (!nomes.includes(t)) {
+      nomes.push(t);
+    }
+  });
+  return nomes;
+}
+
+function imgThumb(p, i) {
+  const im = p.imagens[i || 0];
+  return "img/thumbs/" + im.src;
+}
+
+function imgGrande(p, i) {
+  const im = p.imagens[i || 0];
+  return "img/produtos/" + im.src;
+}
+
+function linkWhatsApp(texto) {
+  return "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(texto);
+}
+
+function urlBase() {
+  return location.href.split("#")[0];
+}
+
+function descricao(p) {
+  const cat = categoria(p.cat);
+  let texto = cat.desc;
+  if (p.tipo.includes("Champanheira")) {
+    texto = "Mesa de centro com balde embutido no tampo, para servir bebidas geladas na área externa.";
+  } else if (p.tipo === "Banqueta") {
+    texto = "Banqueta para áreas gourmet e bares, disponível em duas alturas: banqueta (balcão) e banqueta bancada.";
+  } else if (p.tipo === "Conjunto Bistrô") {
+    texto = "Mesa bistrô alta com banquetas, para áreas gourmet, bares e varandas.";
+  } else if (p.tipo === "Balanço") {
+    texto = "Balanço suspenso com suporte próprio, que pode ficar na varanda, no deck ou no jardim sem precisar de gancho no teto.";
+  } else if (p.tipo === "Sofá") {
+    texto = "Sofá de linhas orgânicas, com encosto curvo e almofadas soltas. Funciona como peça central de uma área de estar externa.";
+  } else if (p.tipo === "Conjunto Modular") {
+    texto = "Sofá modular com módulos de 1,00 m, 1,20 m, chaise e mesa de apoio. Dá para montar em linha ou em L, no tamanho do seu espaço.";
+  } else if (p.tipo === "Puff") {
+    texto = "Puff para usar como assento extra ou apoio na varanda e na área da piscina.";
+  } else if (p.tipo === "Aparador") {
+    texto = "Aparador para apoiar travessas, vasos e objetos na área gourmet ou na varanda.";
+  } else if (p.tipo === "Carrinho Bar") {
+    texto = "Carrinho bar com rodas e bandeja, para levar bebidas e petiscos até onde estiver a festa.";
+  } else if (p.tipo === "Chaise") {
+    texto = "Chaise ampla para deitar e descansar na beira da piscina ou no jardim.";
+  }
+  return texto + " Você escolhe os acabamentos e a peça é produzida sob encomenda.";
+}
+
+function card(p) {
+  const foto = p.imagens[0].foto;
+  const classe = foto ? "card-img foto" : "card-img";
+  const pecasTexto = pecas(p).join(" · ");
+  return (
+    '<a class="card" href="#produto-' + p.slug + '">' +
+    '<div class="' + classe + '"><img src="' + imgThumb(p) + '" alt="' + nomeCompleto(p) + '" loading="lazy" width="' + Math.min(p.imagens[0].w, 640) + '" height="' + Math.round(p.imagens[0].h * Math.min(1, 640 / p.imagens[0].w)) + '"></div>' +
+    '<div class="card-info"><span class="card-tipo">' + p.tipo + "</span><h3>" + p.nome + '</h3><span class="card-pecas">' + pecasTexto + "</span></div>" +
+    "</a>"
+  );
+}
+
+function folhasSvg(classe) {
+  return '<svg class="' + (classe || "") + '" viewBox="0 0 64 64" aria-hidden="true"><use href="#folhas"></use></svg>';
+}
+
+function renderHome() {
+  document.title = "Áurea Outdoor | Móveis para áreas externas";
+  const totalCordas = acabamentos["corda-nautica"].length + acabamentos["trico-nautico"].length + acabamentos["corda-sintetica"].length;
+  const destaques = DESTAQUES.map(porSlug).filter(Boolean);
+
+  const ambientes = [
+    { titulo: "Piscinas", sub: "Espreguiçadeiras e chaises", img: "img/ambientes/praia.jpg", link: "#catalogo-descanso" },
+    { titulo: "Varandas", sub: "Conjuntos de estar", img: "img/ambientes/deck.jpg", link: "#catalogo-estar" },
+    { titulo: "Jardins", sub: "Mesas de jantar", img: "img/ambientes/jardim.jpg", link: "#catalogo-jantar" }
+  ];
+
+  app.innerHTML =
+    '<section class="hero" id="inicio">' +
+    '<svg class="ramo ramo-1" viewBox="0 0 200 200" aria-hidden="true"><use href="#ramo"></use></svg>' +
+    '<svg class="ramo ramo-2" viewBox="0 0 200 200" aria-hidden="true"><use href="#ramo"></use></svg>' +
+    '<div class="wrap">' +
+    '<div class="hero-texto entrar">' +
+    '<span class="eyebrow">Mobiliário de design e decoração externa</span>' +
+    "<h1><span>Seu estilo,</span>ao ar livre.</h1>" +
+    '<p class="hero-lead">Móveis sofisticados para piscinas, varandas e jardins. Você escolhe o modelo, a cor da estrutura e a trama, e a gente cuida do pedido sob encomenda junto à fábrica parceira até a peça chegar na sua casa.</p>' +
+    '<div class="hero-botoes"><a class="btn btn-oliva" href="#catalogo">Ver catálogo ' + icone.seta + '</a><a class="btn btn-linha" target="_blank" rel="noopener" href="' + linkWhatsApp("Olá, Áurea Outdoor! Vim pelo site e gostaria de um orçamento.") + '">Pedir orçamento</a></div>' +
+    '<div class="hero-fatos">' +
+    '<div class="fato"><strong>' + produtos.length + "</strong><span>modelos</span></div>" +
+    '<div class="fato"><strong>' + acabamentos.aluminio.length + "</strong><span>cores de alumínio</span></div>" +
+    '<div class="fato"><strong>' + totalCordas + "</strong><span>cores de trama</span></div>" +
+    "</div></div>" +
+    '<div class="hero-arco entrar">' +
+    '<div class="foto"><img src="img/ambientes/jardim.jpg" alt="Conjunto de jantar Aruba com mesa redonda de madeira e cadeiras em corda, montado em um jardim" width="1600" height="920"></div>' +
+    '<div class="hero-selo" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="circulo" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"></path></defs><text font-family="Montserrat, Arial, sans-serif" font-size="9" fill="#85663A"><textPath href="#circulo" textLength="284" lengthAdjust="spacing">SEU ESTILO, AO AR LIVRE · ÁUREA OUTDOOR ·</textPath></text></svg>' + folhasSvg("folhas") + "</div>" +
+    "</div></div></section>" +
+
+    '<div class="valores"><div class="wrap"><span>Elegância</span>' + folhasSvg() + "<span>Conforto</span>" + folhasSvg() + "<span>Personalização</span></div></div>" +
+
+    '<section class="secao" id="ambientes"><div class="wrap">' +
+    '<div class="secao-cab"><div><span class="eyebrow">Para cada espaço</span><h2>Piscinas, varandas e jardins</h2><p>Comece pelo lugar da casa que você quer transformar.</p></div></div>' +
+    '<div class="ambientes">' +
+    ambientes.map((a) => '<a class="ambiente" href="' + a.link + '"><img src="' + a.img + '" alt="" loading="lazy" width="1600" height="920"><div class="ambiente-legenda"><span>' + a.sub + "</span><h3>" + a.titulo + "</h3></div></a>").join("") +
+    "</div></div></section>" +
+
+    '<section class="secao" id="colecao" style="padding-top:0"><div class="wrap">' +
+    '<div class="secao-cab"><div><span class="eyebrow">Coleção</span><h2>Destaques do catálogo</h2></div><a class="link-seta" href="#catalogo">Ver os ' + produtos.length + " modelos " + icone.seta + "</a></div>" +
+    '<div class="grade">' + destaques.map(card).join("") + "</div>" +
+    '<div class="secao-cab" style="margin:72px 0 28px"><div><span class="eyebrow">Categorias</span><h2>Navegue por tipo de peça</h2></div></div>' +
+    '<div class="categorias">' +
+    CATEGORIAS.map((c) => {
+      const capa = porSlug(c.capa);
+      const qtd = produtos.filter((p) => p.cat === c.id).length;
+      return '<a class="categoria" href="#catalogo-' + c.id + '"><div class="categoria-img"><img src="' + imgThumb(capa) + '" alt="" loading="lazy"></div><h3>' + c.nome + "</h3><span>" + qtd + (qtd === 1 ? " modelo" : " modelos") + "</span></a>";
+    }).join("") +
+    '<a class="categoria categoria-todos" href="#catalogo"><h3>Ver todos os modelos</h3><span>' + produtos.length + " modelos " + icone.seta + "</span></a>" +
+    "</div></div></section>" +
+
+    '<section class="personalize" id="personalize"><div class="wrap">' +
+    '<div class="personalize-texto"><span class="eyebrow">Personalização</span><h2>Cada peça <em>do seu jeito</em></h2>' +
+    "<p>Os móveis são produzidos sob encomenda, então você escolhe a cor da estrutura em alumínio, o tipo e a cor da trama e o tecido das almofadas. Na página de cada modelo dá para montar a combinação e mandar direto no WhatsApp.</p>" +
+    '<div><a class="btn btn-claro" href="#catalogo">Escolher um modelo ' + icone.seta + "</a></div></div>" +
+    '<div class="amostras">' +
+    '<div class="amostra-grupo"><h3>Estrutura em alumínio</h3><div class="amostra-linha">' + acabamentos.aluminio.map((a) => '<span class="chip-cor" style="background:' + a.cor + '" title="' + a.nome + '"></span>').join("") + "</div></div>" +
+    TRAMAS.map((t) => '<div class="amostra-grupo"><h3>' + t.nome + '</h3><div class="amostra-linha">' + acabamentos[t.id].map((a) => '<span class="rolo' + (t.id === "corda-sintetica" ? " sintetica" : "") + '" title="' + a.nome + '"><img src="img/acabamentos/' + a.img + '" alt="' + t.nome + " " + a.nome + '" loading="lazy"></span>').join("") + "</div></div>").join("") +
+    "</div></div></section>" +
+
+    '<section class="secao" id="como-funciona"><div class="wrap">' +
+    '<div class="secao-cab"><div><span class="eyebrow">Sob encomenda</span><h2>Como funciona o pedido</h2><p>A Áurea Outdoor trabalha com uma fábrica parceira especializada em mobiliário externo. A gente acompanha cada etapa com você.</p></div></div>' +
+    '<div class="passos">' +
+    '<div class="passo"><span class="passo-num">1</span><h3>Escolha o modelo</h3><p>Navegue pelo catálogo e veja as medidas de cada peça.</p></div>' +
+    '<div class="passo"><span class="passo-num">2</span><h3>Monte a combinação</h3><p>Defina a cor do alumínio, a trama e o tecido das almofadas.</p></div>' +
+    '<div class="passo"><span class="passo-num">3</span><h3>Receba o orçamento</h3><p>Mande o pedido pelo WhatsApp e receba valores e prazo.</p></div>' +
+    '<div class="passo"><span class="passo-num">4</span><h3>Produção e entrega</h3><p>A fábrica parceira produz a peça sob encomenda e a gente combina a entrega com você.</p></div>' +
+    "</div></div></section>" +
+
+    '<section class="chamada" id="contato">' +
+    '<svg class="ramo ramo-1" viewBox="0 0 200 200" aria-hidden="true"><use href="#ramo"></use></svg>' +
+    '<svg class="ramo ramo-2" viewBox="0 0 200 200" aria-hidden="true"><use href="#ramo"></use></svg>' +
+    '<div class="wrap"><span class="eyebrow">Fale com a gente</span><hr class="traco"><h2>Vamos montar o seu espaço?</h2>' +
+    "<p>Mande o modelo que você gostou, uma foto do ambiente ou só a sua ideia. A gente ajuda a escolher as peças e os acabamentos.</p>" +
+    '<a class="btn btn-oliva" target="_blank" rel="noopener" href="' + linkWhatsApp("Olá, Áurea Outdoor! Vim pelo site e gostaria de ajuda para montar minha área externa.") + '">' + icone.conversa + " Chamar no WhatsApp</a>" +
+    '<span class="numero">WhatsApp ' + CONFIG.whatsappExibicao + "</span></div></section>";
+}
+
+function renderCatalogo(catId, busca) {
+  const cat = catId ? categoria(catId) : null;
+  document.title = (cat ? cat.nome : "Catálogo") + " | Áurea Outdoor";
+  app.innerHTML =
+    '<section class="catalogo-topo"><div class="wrap entrar"><span class="eyebrow">Catálogo</span><h1>' + (cat ? cat.nome : "Todos os modelos") + "</h1><p>" + (cat ? cat.desc : "Móveis para áreas externas produzidos sob encomenda. Clique em um modelo para ver as medidas e escolher os acabamentos.") + "</p></div></section>" +
+    '<div class="filtros"><div class="wrap">' +
+    '<nav class="chips" aria-label="Categorias">' +
+    '<a class="chip' + (cat ? "" : " ativo") + '" href="#catalogo">Todos <small>' + produtos.length + "</small></a>" +
+    CATEGORIAS.map((c) => '<a class="chip' + (cat && cat.id === c.id ? " ativo" : "") + '" href="#catalogo-' + c.id + '">' + c.nome + " <small>" + produtos.filter((p) => p.cat === c.id).length + "</small></a>").join("") +
+    "</nav>" +
+    '<label class="busca"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg><input id="campo-busca" type="search" placeholder="Buscar modelo" aria-label="Buscar modelo" value="' + (busca || "") + '"></label>' +
+    "</div></div>" +
+    '<section class="secao" style="padding-top:36px"><div class="wrap"><p class="resultado-info" id="resultado-info"></p><div class="grade" id="grade"></div></div></section>';
+
+  const campo = document.getElementById("campo-busca");
+  campo.addEventListener("input", () => preencherGrade(catId, campo.value));
+  preencherGrade(catId, busca || "");
+  const ativo = document.querySelector(".chip.ativo");
+  if (ativo) {
+    ativo.scrollIntoView({ block: "nearest", inline: "center" });
+  }
+}
+
+function normalizar(s) {
+  return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+}
+
+function preencherGrade(catId, busca) {
+  const termo = normalizar(busca.trim());
+  const filtrados = produtos.filter((p) => {
+    if (catId && p.cat !== catId) {
+      return false;
+    }
+    if (termo) {
+      const alvo = normalizar(nomeCompleto(p) + " " + pecas(p).join(" "));
+      return alvo.includes(termo);
+    }
+    return true;
+  });
+  const grade = document.getElementById("grade");
+  const info = document.getElementById("resultado-info");
+  if (filtrados.length === 0) {
+    info.textContent = "";
+    grade.innerHTML = '<div class="vazio" style="grid-column:1/-1">Nenhum modelo encontrado para "' + busca + '". Tente outro nome ou veja todas as categorias.</div>';
+  } else {
+    info.textContent = filtrados.length + (filtrados.length === 1 ? " modelo" : " modelos");
+    grade.innerHTML = filtrados.map(card).join("");
+  }
+}
+
+function renderProduto(slug) {
+  const p = porSlug(slug);
+  if (!p) {
+    renderCatalogo(null, "");
+    return;
+  }
+  const cat = categoria(p.cat);
+  const temTrama = !SEM_TRAMA.has(p.slug);
+  document.title = nomeCompleto(p) + " | Áurea Outdoor";
+  selecao = { slug: p.slug, aluminio: null, trama: temTrama ? TRAMAS[0].id : null, corTrama: null, obs: "", qtd: 1, img: 0 };
+
+  const relacionados = produtos.filter((x) => x.cat === p.cat && x.slug !== p.slug).slice(0, 4);
+  const foto0 = p.imagens[0].foto;
+
+  app.innerHTML =
+    '<div class="wrap">' +
+    '<nav class="migalhas" aria-label="Você está em"><a href="#inicio">Início</a><span>/</span><a href="#catalogo">Catálogo</a><span>/</span><a href="#catalogo-' + cat.id + '">' + cat.nome + "</a><span>/</span><span>" + p.nome + "</span></nav>" +
+    '<div class="produto">' +
+    '<div class="galeria entrar">' +
+    '<div class="galeria-principal' + (foto0 ? " foto" : "") + '" id="galeria-principal"><img id="img-principal" src="' + imgGrande(p, 0) + '" alt="' + nomeCompleto(p) + '" width="' + p.imagens[0].w + '" height="' + p.imagens[0].h + '"></div>' +
+    (p.imagens.length > 1 ? '<div class="miniaturas">' + p.imagens.map((im, i) => '<button class="miniatura' + (i === 0 ? " ativo" : "") + '" data-img="' + i + '" aria-label="Ver imagem ' + (i + 1) + '"><img src="img/thumbs/' + im.src + '" alt=""></button>').join("") + "</div>" : "") +
+    "</div>" +
+    '<div class="produto-info entrar">' +
+    '<div style="display:flex;flex-direction:column;gap:14px"><span class="eyebrow">' + p.tipo + "</span><h1>" + p.nome + '</h1><hr class="traco"></div>' +
+    '<p class="produto-desc">' + descricao(p) + "</p>" +
+    '<div class="composicao">' + pecas(p).map((x) => "<span>" + x + "</span>").join("") + "</div>" +
+
+    '<div class="bloco"><div class="bloco-titulo"><h2>Estrutura em alumínio</h2><span id="rotulo-aluminio">Escolha uma cor</span></div>' +
+    '<div class="opcoes">' + acabamentos.aluminio.map((a) => '<button class="opcao-cor" data-aluminio="' + a.nome + '" style="background:' + a.cor + '" title="' + a.nome + '" aria-label="Alumínio ' + a.nome + '"></button>').join("") + "</div></div>" +
+
+    (temTrama
+      ? '<div class="bloco"><div class="bloco-titulo"><h2>Trama</h2><span id="rotulo-trama">Escolha uma cor</span></div>' +
+        '<div class="segmentos">' + TRAMAS.map((t, i) => '<button class="segmento' + (i === 0 ? " ativo" : "") + '" data-trama="' + t.id + '">' + t.nome + "</button>").join("") + "</div>" +
+        '<div class="opcoes" id="opcoes-trama"></div></div>'
+      : "") +
+
+    '<div class="bloco"><div class="campo"><label for="obs">Observações (tecido das almofadas, quantidade de peças, medidas)</label><textarea id="obs" rows="3" placeholder="Ex.: almofadas em tecido off white, sofá de 2,20 m e 2 poltronas"></textarea></div></div>' +
+
+    '<div class="bloco"><div class="acoes-produto">' +
+    '<div class="qtd" role="group" aria-label="Quantidade"><button type="button" data-qtd="-1" aria-label="Diminuir">−</button><output id="qtd">1</output><button type="button" data-qtd="1" aria-label="Aumentar">+</button></div>' +
+    '<a class="btn btn-oliva" id="btn-orcamento" target="_blank" rel="noopener" href="#">' + icone.conversa + " Pedir orçamento</a>" +
+    '<button class="btn btn-linha btn-bloco" id="btn-adicionar" type="button">Adicionar à lista de orçamento</button>' +
+    "</div>" +
+    '<div class="aviso">' + icone.info + "<span>Peça produzida sob encomenda pela nossa fábrica parceira. Valores, prazo e disponibilidade de cada acabamento são confirmados no orçamento.</span></div></div>" +
+
+    '<div class="bloco"><div class="bloco-titulo"><h2>Medidas</h2></div><div class="medidas">' +
+    p.medidas.map((g) => '<div class="medida"><h3>' + g.titulo + "</h3><dl>" + g.medidas.map((m) => "<dt>" + m[0] + "</dt><dd>" + m[1].replace("/", " / ") + "</dd>").join("") + "</dl></div>").join("") +
+    '</div><p class="nota">Medidas de referência do fabricante. Podem variar levemente conforme o acabamento escolhido.</p></div>' +
+    "</div></div></div>" +
+
+    (relacionados.length
+      ? '<section class="relacionados"><div class="wrap"><div class="secao-cab" style="margin-bottom:30px"><div><span class="eyebrow">Mesma categoria</span><h2 style="margin:0">Você também pode gostar</h2></div><a class="link-seta" href="#catalogo-' + cat.id + '">Ver ' + cat.nome.toLowerCase() + " " + icone.seta + '</a></div><div class="grade">' + relacionados.map(card).join("") + "</div></div></section>"
+      : "");
+
+  app.querySelectorAll(".miniatura").forEach((b) => {
+    b.addEventListener("click", () => {
+      const i = Number(b.dataset.img);
+      const im = p.imagens[i];
+      const box = document.getElementById("galeria-principal");
+      const img = document.getElementById("img-principal");
+      img.src = imgGrande(p, i);
+      img.width = im.w;
+      img.height = im.h;
+      if (im.foto) {
+        box.classList.add("foto");
+      } else {
+        box.classList.remove("foto");
+      }
+      app.querySelectorAll(".miniatura").forEach((m) => m.classList.toggle("ativo", m === b));
+    });
+  });
+
+  app.querySelectorAll("[data-aluminio]").forEach((b) => {
+    b.addEventListener("click", () => {
+      if (selecao.aluminio === b.dataset.aluminio) {
+        selecao.aluminio = null;
+      } else {
+        selecao.aluminio = b.dataset.aluminio;
+      }
+      app.querySelectorAll("[data-aluminio]").forEach((x) => x.classList.toggle("ativo", x.dataset.aluminio === selecao.aluminio));
+      document.getElementById("rotulo-aluminio").textContent = selecao.aluminio ? "Alumínio " + selecao.aluminio : "Escolha uma cor";
+      atualizarLinkOrcamento();
+    });
+  });
+
+  if (temTrama) {
+    app.querySelectorAll("[data-trama]").forEach((b) => {
+      b.addEventListener("click", () => {
+        selecao.trama = b.dataset.trama;
+        selecao.corTrama = null;
+        app.querySelectorAll("[data-trama]").forEach((x) => x.classList.toggle("ativo", x === b));
+        desenharCoresTrama();
+        atualizarLinkOrcamento();
+      });
+    });
+    desenharCoresTrama();
+  }
+
+  document.getElementById("obs").addEventListener("input", (e) => {
+    selecao.obs = e.target.value;
+    atualizarLinkOrcamento();
+  });
+
+  app.querySelectorAll("[data-qtd]").forEach((b) => {
+    b.addEventListener("click", () => {
+      selecao.qtd = Math.max(1, Math.min(99, selecao.qtd + Number(b.dataset.qtd)));
+      document.getElementById("qtd").textContent = selecao.qtd;
+      atualizarLinkOrcamento();
+    });
+  });
+
+  document.getElementById("btn-adicionar").addEventListener("click", () => {
+    lista.push({
+      slug: selecao.slug,
+      aluminio: selecao.aluminio,
+      trama: selecao.corTrama ? selecao.trama : null,
+      corTrama: selecao.corTrama,
+      obs: selecao.obs.trim(),
+      qtd: selecao.qtd
+    });
+    salvarLista();
+    atualizarContador();
+    mostrarToast(nomeCompleto(p) + " foi para a lista de orçamento");
+  });
+
+  atualizarLinkOrcamento();
+}
+
+function desenharCoresTrama() {
+  const alvo = document.getElementById("opcoes-trama");
+  const tramaNome = TRAMAS.find((t) => t.id === selecao.trama).nome;
+  alvo.innerHTML = acabamentos[selecao.trama].map((a) => '<button class="opcao-rolo' + (selecao.trama === "corda-sintetica" ? " sintetica" : "") + '" data-cor-trama="' + a.nome + '" title="' + a.nome + '" aria-label="' + tramaNome + " " + a.nome + '"><img src="img/acabamentos/' + a.img + '" alt=""></button>').join("");
+  document.getElementById("rotulo-trama").textContent = "Escolha uma cor";
+  alvo.querySelectorAll("[data-cor-trama]").forEach((b) => {
+    b.addEventListener("click", () => {
+      if (selecao.corTrama === b.dataset.corTrama) {
+        selecao.corTrama = null;
+      } else {
+        selecao.corTrama = b.dataset.corTrama;
+      }
+      alvo.querySelectorAll("[data-cor-trama]").forEach((x) => x.classList.toggle("ativo", x.dataset.corTrama === selecao.corTrama));
+      document.getElementById("rotulo-trama").textContent = selecao.corTrama ? tramaNome + " " + selecao.corTrama : "Escolha uma cor";
+      atualizarLinkOrcamento();
+    });
+  });
+}
+
+function descreverItem(item, comLink) {
+  const p = porSlug(item.slug);
+  const linhas = ["*" + nomeCompleto(p) + "* (" + item.qtd + "x)"];
+  linhas.push("Estrutura: " + (item.aluminio ? "Alumínio " + item.aluminio : "a definir"));
+  if (!SEM_TRAMA.has(item.slug)) {
+    let trama = "a definir";
+    if (item.corTrama) {
+      trama = TRAMAS.find((t) => t.id === item.trama).nome + " " + item.corTrama;
+    }
+    linhas.push("Trama: " + trama);
+  }
+  if (item.obs) {
+    linhas.push("Obs.: " + item.obs);
+  }
+  if (comLink) {
+    linhas.push(urlBase() + "#produto-" + item.slug);
+  }
+  return linhas.join("\n");
+}
+
+function atualizarLinkOrcamento() {
+  const btn = document.getElementById("btn-orcamento");
+  if (!btn) {
+    return;
+  }
+  const item = {
+    slug: selecao.slug,
+    aluminio: selecao.aluminio,
+    trama: selecao.trama,
+    corTrama: selecao.corTrama,
+    obs: selecao.obs.trim(),
+    qtd: selecao.qtd
+  };
+  const texto = "Olá, Áurea Outdoor! Vim pelo site e gostaria de um orçamento:\n\n" + descreverItem(item, true);
+  btn.href = linkWhatsApp(texto);
+}
+
+function carregarLista() {
+  try {
+    const bruto = localStorage.getItem("aurea-lista");
+    if (bruto) {
+      const itens = JSON.parse(bruto);
+      return itens.filter((i) => porSlug(i.slug));
+    }
+  } catch (e) {
+    return [];
+  }
+  return [];
+}
+
+function salvarLista() {
+  try {
+    localStorage.setItem("aurea-lista", JSON.stringify(lista));
+  } catch (e) {
+    return;
+  }
+}
+
+function atualizarContador() {
+  const total = lista.reduce((s, i) => s + i.qtd, 0);
+  const el = document.getElementById("contador");
+  el.textContent = total;
+  el.hidden = total === 0;
+}
+
+function renderGaveta() {
+  const corpo = document.getElementById("gaveta-corpo");
+  const rodape = document.getElementById("gaveta-rodape");
+  if (lista.length === 0) {
+    corpo.innerHTML = '<div class="lista-vazia"><p>Sua lista está vazia. Abra um modelo no catálogo, escolha os acabamentos e toque em "Adicionar à lista de orçamento".</p><a class="btn btn-linha" href="#catalogo" data-fechar>Ver catálogo</a></div>';
+    rodape.hidden = true;
+    return;
+  }
+  rodape.hidden = false;
+  corpo.innerHTML = lista.map((item, i) => {
+    const p = porSlug(item.slug);
+    const detalhes = [];
+    if (item.aluminio) {
+      detalhes.push("Alumínio " + item.aluminio);
+    }
+    if (item.corTrama) {
+      detalhes.push(TRAMAS.find((t) => t.id === item.trama).nome + " " + item.corTrama);
+    }
+    if (detalhes.length === 0) {
+      detalhes.push("Acabamentos a definir");
+    }
+    return (
+      '<div class="item-lista"><a class="mini" href="#produto-' + p.slug + '" data-fechar><img src="' + imgThumb(p) + '" alt=""></a><div>' +
+      '<span class="card-tipo">' + p.tipo + "</span><h3>" + p.nome + "</h3><p>" + detalhes.join(" · ") + "</p>" +
+      (item.obs ? "<p>Obs.: " + item.obs + "</p>" : "") +
+      '<div class="item-acoes"><div class="qtd" role="group" aria-label="Quantidade"><button type="button" data-item-qtd="' + i + '" data-delta="-1" aria-label="Diminuir">−</button><output>' + item.qtd + '</output><button type="button" data-item-qtd="' + i + '" data-delta="1" aria-label="Aumentar">+</button></div>' +
+      '<button class="link-remover" data-remover="' + i + '">Remover</button></div></div></div>'
+    );
+  }).join("");
+
+  const texto = "Olá, Áurea Outdoor! Vim pelo site e gostaria de um orçamento destes itens:\n\n" + lista.map((item) => descreverItem(item, true)).join("\n\n");
+  document.getElementById("btn-enviar-lista").href = linkWhatsApp(texto);
+
+  corpo.querySelectorAll("[data-item-qtd]").forEach((b) => {
+    b.addEventListener("click", () => {
+      const item = lista[Number(b.dataset.itemQtd)];
+      item.qtd = Math.max(1, Math.min(99, item.qtd + Number(b.dataset.delta)));
+      salvarLista();
+      atualizarContador();
+      renderGaveta();
+    });
+  });
+  corpo.querySelectorAll("[data-remover]").forEach((b) => {
+    b.addEventListener("click", () => {
+      lista.splice(Number(b.dataset.remover), 1);
+      salvarLista();
+      atualizarContador();
+      renderGaveta();
+    });
+  });
+}
+
+function abrirGaveta() {
+  renderGaveta();
+  document.getElementById("gaveta").classList.add("aberto");
+  document.getElementById("gaveta").setAttribute("aria-hidden", "false");
+  document.getElementById("fundo-escuro").classList.add("aberto");
+}
+
+function fecharGaveta() {
+  document.getElementById("gaveta").classList.remove("aberto");
+  document.getElementById("gaveta").setAttribute("aria-hidden", "true");
+  document.getElementById("fundo-escuro").classList.remove("aberto");
+}
+
+let timerToast = null;
+
+function mostrarToast(texto) {
+  const t = document.getElementById("toast");
+  t.textContent = texto;
+  t.classList.add("visivel");
+  clearTimeout(timerToast);
+  timerToast = setTimeout(() => t.classList.remove("visivel"), 2600);
+}
+
+let viewAtual = null;
+
+function rotear() {
+  const hash = decodeURIComponent(location.hash.replace("#", ""));
+  document.getElementById("nav").classList.remove("aberto");
+  let nav = "inicio";
+
+  if (hash.startsWith("produto-")) {
+    renderProduto(hash.slice(8));
+    viewAtual = "produto";
+    nav = "catalogo";
+    window.scrollTo(0, 0);
+  } else if (hash === "catalogo" || hash.startsWith("catalogo-")) {
+    const cat = hash.startsWith("catalogo-") ? hash.slice(9) : null;
+    const valido = cat && categoria(cat) ? cat : null;
+    renderCatalogo(valido, "");
+    viewAtual = "catalogo";
+    nav = "catalogo";
+    window.scrollTo(0, 0);
+  } else {
+    if (viewAtual !== "home") {
+      renderHome();
+      viewAtual = "home";
+    }
+    if (hash && SECOES_HOME.includes(hash)) {
+      nav = hash;
+      const alvo = document.getElementById(hash);
+      if (alvo && hash !== "inicio") {
+        alvo.scrollIntoView();
+      } else {
+        window.scrollTo(0, 0);
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }
+
+  document.querySelectorAll("#nav a").forEach((a) => {
+    a.classList.toggle("ativo", a.getAttribute("href") === "#" + nav);
+  });
+}
+
+function iniciar() {
+  document.getElementById("ano").textContent = new Date().getFullYear();
+  document.querySelectorAll("[data-wpp]").forEach((a) => {
+    a.href = linkWhatsApp(a.dataset.wpp);
+  });
+  document.querySelectorAll("[data-numero]").forEach((el) => {
+    el.textContent = CONFIG.whatsappExibicao;
+  });
+  const insta = document.getElementById("link-instagram");
+  if (CONFIG.instagram) {
+    insta.href = CONFIG.instagram;
+    insta.textContent = CONFIG.instagramUsuario || "Instagram";
+  } else {
+    insta.parentElement.hidden = true;
+  }
+
+  document.getElementById("btn-menu").addEventListener("click", () => {
+    document.getElementById("nav").classList.toggle("aberto");
+  });
+  document.getElementById("btn-lista").addEventListener("click", abrirGaveta);
+  document.getElementById("btn-fechar").addEventListener("click", fecharGaveta);
+  document.getElementById("fundo-escuro").addEventListener("click", fecharGaveta);
+  document.getElementById("btn-limpar").addEventListener("click", () => {
+    lista = [];
+    salvarLista();
+    atualizarContador();
+    renderGaveta();
+  });
+  document.getElementById("gaveta").addEventListener("click", (e) => {
+    if (e.target.closest("[data-fechar]")) {
+      fecharGaveta();
+    }
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      fecharGaveta();
+    }
+  });
+
+  window.addEventListener("hashchange", rotear);
+  atualizarContador();
+  rotear();
+}
+
+iniciar();
+
+</script>
+</body>
+</html>
